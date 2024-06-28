@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css Task 8 - Loading page animation </title>
+
+    <style>
+
+        /* common css */
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        .loaders{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+
+
+        /* 1st loader */
+
+        .circle {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 0px 4px;
+            background-color: gray;
+            animation-delay: var(--d);
+            animation-name: loading;
+            animation-duration: 1000ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            transform-style: preserve-3d;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes loading {
+            0%{
+                transform: scale(1);
+                background-color: rgb(89, 89, 89);
+            }
+
+            50%{
+                transform: scale(0.2);
+                background-color: gray;
+            }
+
+            100%{
+                transform: scale(1);
+                background-color: rgb(89, 89, 89);
+            }
+        }
+
+
+
+        /* 2nd loader */
+
+        .square {
+            height: 30px;
+            width: 30px;
+            border-radius: 2px;
+            margin: 0px 4px;
+            animation-delay: var(--d);
+            animation-name: loading2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        @keyframes loading2 {
+            0%{
+                transform: translateY(0px);
+            }
+
+            50%{
+                transform: translateY(-60px);
+            }
+
+            51%{
+                transform: translateY(-60px);
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- 1st loader -->
+
+    <div class="loaders">
+        <div class="circle" style="--d: 200ms;"></div>
+        <div class="circle" style="--d: 300ms;"></div>
+        <div class="circle" style="--d: 400ms;"></div>
+        <div class="circle" style="--d: 500ms;"></div>
+        <div class="circle" style="--d: 600ms;"></div>
+    </div>
+
+
+    <!-- 2nd loader -->
+
+    <div class="loaders">
+        <div class="square square1" style="--d: 0.6s; background-color: purple;"></div>
+        <div class="square square2" style="--d: 0.8s; background-color: orangered;"></div>
+        <div class="square square3" style="--d: 1.0s; background-color: greenyellow;"></div>
+        <div class="square square4" style="--d: 1.2s; background-color: magenta;"></div>
+        <div class="square square5" style="--d: 1.4s; background-color: lightskyblue;"></div>
+    </div>
+
+
+</body>
+</html>

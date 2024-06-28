@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 side background-color & 1 side background-img </title>
+    <link rel="stylesheet" href="Assignment2-mediaquery(CSS-part).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        
+    :root{
+        --background-color: #F1F3F6;
+        --white: #FFFFFF;
+        --black: #000000;
+        --lightgray: #e0e0e0;
+        --all-btn: #e74b3c;
+        --dark-gray: #1f1f1f;
+    }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'poppins','serif';
+    }
+
+    body{
+        margin: 50px auto;
+    }
+
+    .new-box{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        color: var(--white);
+        text-align: right;
+    }
+
+    .new-box .bg-color{
+        background-color: var(--dark-gray);
+        padding: 100px 0px;
+        width: 50%;
+    }
+
+    .new-box .bg-color::before{
+        content: " ";
+    }
+
+    .new-box .content-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-box .content-box::after{
+        content: " ";
+    }
+
+    .new-box .content-box .heading{
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 55px;
+    }
+
+    .new-box .content-box .heading h1{
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .new-box .content-box .heading p{
+        height: 40px;
+        width: 3px;
+        background-color: var(--all-btn);
+        margin-left: 10px;
+    }
+
+
+    .new-box .content-box .content1, .content2, .content3{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: -25px;
+        z-index: 1;
+    }
+
+    .new-box .content-box .content1 .text,
+    .content2 .text,
+    .content3 .text{
+        padding-right: 30px;
+        justify-content: end;
+    }
+
+    .new-box .content-box .content1 .text h4,
+    .content2 .text h4,
+    .content3 .text h4{
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--all-btn);
+    }
+
+    .new-box .content-box .content1 .text p,
+    .content2 .text p,
+    .content3 .text p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: var(--lightgray);
+        padding-left: 30px;
+    }
+
+    .new-box .content-box .content1 .img,
+    .content2 .img
+    .content3 .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-box .content-box .content1 .img i,
+    .content2 .img i,
+    .content3 .img i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--all-btn);
+        font-size: 22px;
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .new-box .bg-img{
+        width: 50%;
+    }
+
+    .new-box .bg-img img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border: 0px;
+    }
+
+
+    @media (min-width:1150px) and (max-width:2560px){
+        .new-box{
+            width: 100%;
+        }
+    }
+
+    @media (min-width:766px) and (max-width:1150px){
+        .new-box{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .new-box .bg-color{
+            padding: 50px 0px;
+        } 
+
+        .new-box .content-box .heading{
+            padding-right: 40px;
+        }
+
+        .new-box .content-box .content1 .text,
+        .content2 .text,
+        .content3 .text{
+            padding-right: 15px;
+        }
+    }
+
+    @media (min-width:460px) and (max-width:766px){
+        .new-box{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .new-box .bg-color{
+            width: 50%;
+            padding: 20px 0px;
+        } 
+
+        .new-box .content-box .heading{
+            padding-right: 40px;
+        }
+
+        .new-box .content-box .heading h1{
+            font-size: 22px;
+        }
+        
+        .new-box .content-box .heading p{
+            height: 25px;
+            width: 2px;
+        }
+
+        .new-box .content-box .content1 .text,
+        .content2 .text,
+        .content3 .text{
+            padding-right: 15px;
+        }
+
+        .new-box .content-box .content1 .text h4,
+        .content2 .text h4,
+        .content3 .text h4{
+            font-size: 16px;
+        }
+
+        .new-box .content-box .content1 .text p,
+        .content2 .text p,
+        .content3 .text p{
+            font-size: 10px;
+        }
+
+        .new-box .bg-img{
+            width: 50%;
+        }
+    }
+
+    @media (min-width:200px) and (max-width:460px){
+        .new-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .new-box .bg-color{
+            width: 100%;
+            padding: 20px 0px;
+        } 
+
+        .new-box .content-box .heading{
+            justify-content: center;
+            padding-right: 0px;
+        }
+
+        .new-box .content-box .heading h1{
+            font-size: 20px;
+        }
+        
+        .new-box .content-box .heading p{
+            display: none;
+        }
+
+        .new-box .content-box .content1, .content2, .content3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px;
+        }
+
+        .new-box .content-box .content1 .text,
+        .content2 .text,
+        .content3 .text{
+            order: 0;
+            padding-right: 0px;
+        }
+
+        .new-box .content-box .content1 .img,
+        .content2 .img
+        .content3 .img{
+            order: 1;
+        }
+
+        .new-box .content-box .content1 .text,
+        .content2 .text,
+        .content3 .text{
+            justify-content: center;
+            padding:0px 20px;
+            order: 2;
+        }
+
+        .new-box .content-box .content1 .text h4,
+        .content2 .text h4,
+        .content3 .text h4{
+            font-size: 14px;
+        }
+
+        .new-box .content-box .content1 .text p,
+        .content2 .text p,
+        .content3 .text p{
+            font-size: 8px;
+            padding-left: 0px;
+        }
+
+        .new-box .bg-img {
+            width: 100%;
+        }
+
+        .new-box .content-box .content1 .img i,
+        .content2 .img i,
+        .content3 .img i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--all-btn);
+            font-size: 16px;
+            background-color: white;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="new-box">
+        <div class="bg-color">
+            <div class="content-box">
+                <div class="heading">
+                    <h1> Our Services </h1>
+                    <p> </p>
+                </div>
+                <div class="content1">
+                    <div class="text">
+                        <h4> Web Design </h4>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, doloremque? Lorem ipsum dolor sit amet. </p>
+                    </div>
+                    <div class="img">
+                         <i class="fa-solid fa-display"></i> 
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="text">
+                        <h4> Print Design </h4>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, doloremque? Lorem ipsum dolor sit amet. </p>
+                    </div>
+                    <div class="img">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="text">
+                        <h4> Photography </h4>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, doloremque? Lorem ipsum dolor sit amet. </p>
+                    </div>
+                    <div class="img">
+                        <i class="fa-solid fa-camera"></i> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-img">
+            <img src="https://images.pexels.com/photos/1209434/pexels-photo-1209434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bg-img">
+        </div>
+    </div>
+    
+    
+
+    
+</body>
+</html>

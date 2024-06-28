@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task 6 (Cards design) </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        /* card 1 style */
+
+        .card-info{
+            border: 2px solid rgb(189, 189, 189);
+            background-color: whitesmoke;
+            height: 450px;
+            width: 20%;
+            text-align: center;
+            margin: 50px;
+            border-radius: 5px;
+        }
+
+        .card-info:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            transform: translateY(-10px);
+            transition: all 300ms;
+        }
+
+        .user-img{
+            padding-top: 40px;
+            background-size: cover;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        img:hover{
+            outline: 2px solid rgb(167, 0, 28);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        .user-city, .username, .user-profession{
+            margin-top: 5px;
+            font-family: poppins;
+            color: rgb(54, 54, 54);
+        }
+
+        .username{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .user-profession{
+            opacity: 80%;
+        }
+
+        .icons-social{
+            margin-top: 10px;
+            filter: grayscale(80%);
+        }
+
+        .icons-social:hover{
+            color:rgb(82, 82, 82);
+            transition: all 300ms;
+        }
+
+        i{
+            font-size: 30px;
+            padding: 2px;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-portfolio{
+            width: 150px;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: rgb(167, 0, 28);
+            border: 2px solid rgb(167, 0, 28);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-family: poppins;
+        }
+
+        .btn-portfolio:hover{
+            border-radius: 5px;
+            border: 2px solid rgb(167, 0, 28);
+            color: rgb(38, 38, 38);
+            outline: none;
+            background-color: transparent;
+            transition: all 300ms;
+        }
+        
+
+        /* card 2 style */
+
+        .card2-info{
+            width: 50%;
+            height: 250px;
+            margin: 50px;
+            padding-left: 30px;
+            background-color: rgb(229, 229, 255);
+            border: 2px solid navy;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #img-card2-size{
+            height: 200px;
+            width: 150px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-content{
+            font-family: poppins;
+            padding-left: 20px;
+            
+        }
+
+        .common{
+            padding-top: 12px;
+        }
+
+        .user-name{
+            font-size: 25px;
+            font-weight: bold;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- card 1 -->
+
+    <div class="card">
+            <div class="card-info">
+                <div class="user-img">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile image"/>
+                </div>
+                <div class="user-city"> Rajkot </div>
+                <div class="username"> Happy Vadariya</div>
+                <div class="user-profession"> Front-End Developer </div>
+                <div class="icons-social">
+                    <i class='fab fa-facebook-square'></i>
+                    <i class='fab fa-twitter-square'></i>
+                    <i class='fab fa-whatsapp-square'></i>
+                    <i class='fab fa-youtube-square'></i>
+                    <i class='fab fa-linkedin'></i>
+                </div>
+                <div class="btn">
+                    <div class="btn-portfolio"> Portfolio </div>
+                </div>
+            </div>
+    </div>
+    
+
+
+    <!-- card 2 -->
+
+    <div class="card2">
+        <div class="card2-info">
+            <div class="img-card2">
+                <img id="img-card2-size" src="https://images.unsplash.com/photo-1517702145080-e4a4d91435bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+            <div class="card-content">
+                <div class="user-name "> Jason Walker </div>
+                <div class="user-mail common"> <b> Emial : </b>  jasonwalker@gmail.com </div>
+                <div class="occupation common"> <b> Occupation : </b> Developer </div>
+                <div class="contact common"> <b> Phone Number : </b> +91 123456789 </div>
+                <div class="address common"> <b> Address : </b> A-101, SantiKunj Appt., Near Ambaji Park, Vadodara, Gujrat. </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

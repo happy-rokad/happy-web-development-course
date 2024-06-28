@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+            font-family: poppins;
+            font-weight: bolder;
+            color: navy;
+        }
+
+        .container{  
+            background-color: rgb(210, 233, 254); 
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .box{
+            height: 100%;
+            width: 800px;
+            border-radius: 10PX;
+            background-color: aliceblue;  
+        }
+
+        form{
+                padding: 50px;
+                font-family: poppins;
+            }
+
+            input{
+                margin-top: 30px;
+                height: 30px;
+                border: 2px solid gray;
+                border-radius: 5px;
+            }
+            
+            option{
+                width: 200px;
+            }
+
+            #city{
+                width: 200px;
+                height: 40px;
+                border: 2px solid gray;
+                border-radius: 5px;
+            }
+        
+    </style>
+</head>
+<body>
+    <h1> User Data Form </h1>
+    <div class="container">
+        <div class="box">
+            <form class="boxtype">
+                <label> User Name : </label> <input type="text" placeholder="Username" minlength="3" maxlength="15" required/> <br>
+                <label> Email : </label> <input type="email" placeholder="Enter your email" required /> <br>
+                <label> Password : </label> <input type="password" placeholder="Enter your password" required/> <br>
+                <label> Date of Birth : </label> <input type="date"/> <br> <br>
+                <label> Address : </label> <br> <textarea placeholder="Enter Your Address" rows="4" cols="50"></textarea> <br>
+                <label> Favorite Color : </label> <input type="color" value="#0000DC"/> <br> <br>
+                <label> Select City : </label> 
+                <select id="city" name="city-list">
+                    <option value="rajkot" selected> Rajkot </option>
+                    <option value="Surat"> Surat </option>
+                    <option value="Baroda"> Baroda </option>
+                    <option value="Ahmedabad"> Ahmedabad </option>
+                </select> <br> 
+                <label for="gender"> Gender : </label> 
+                <input type="radio" name="gender" value="Male"/> Male
+                <input type="radio" name="gender" value="Female"/> Female
+                <br> <br>
+                <label> Favorite Food Items : </label> 
+                <input list="foodname"/>
+                <datalist id="foodname">
+                    <option> Panjabi Dish </option>
+                    <option> Gujrati Dish </option>
+                    <option> Dosa </option>
+                    <option> Chainese </option>
+                </datalist> 
+                <br> 
+                <input type="submit" style="width: 100px; height: 40px;"/> 
+                <input type="reset" style="width: 100px; height: 40px;"/> 
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

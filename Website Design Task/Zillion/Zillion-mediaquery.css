@@ -1,0 +1,1320 @@
+
+@media screen and (min-width:1140px){
+    header{
+        width: 100%;
+    }  
+
+
+    /* business section, partnership-section, fundamental-section   */
+    
+    .business-section, .partnership-section, .fundamental-section{
+        padding: 50px 0px;
+        margin: 0;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1140px) {
+    header{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .wrapper nav a{
+        padding: 0px 10px;
+    
+    }
+    .wrapper{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* white-box card section */
+
+    .white-box{
+        margin: -140px 60px;
+    }
+
+    .white-box .define-card, .strategy-card, .build-card{
+        margin: 50px 20px;
+    }
+    
+    .white-box .define-card .all-img, .strategy-card .all-img, .build-card .all-img{
+        width: 100%;
+        height: 20px;
+    }
+    
+    .white-box .define-card h4, .strategy-card h4, .build-card h4{
+        margin: 10px 0px;
+        font-size: 20px;
+    } 
+    
+    .define-card p, .strategy-card p, .build-card p{
+        font-size: 16px;
+    }
+
+
+    /* fund section */
+
+    .funds{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .funds .fund-content{
+        padding: 30px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points, .second-part-points{
+        margin-top: 30px;
+    }
+    
+    .funds .fund-content .funds-points .second-part-points{
+        margin-left: 40px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point, .s-point, .t-point,
+    .second-part-points .f-point, .s-point, .t-point{
+        margin-top: 20px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point i, .s-point i, .t-point i,
+    .second-part-points .f-point i, .s-point i, .t-point i{
+        font-size: 20px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point p, .s-point p, .t-point p,
+    .second-part-points .f-point p, .s-point p, .t-point p{
+        margin-left: 10px;
+    }
+    
+    
+    .funds .fund-img{
+        padding: 30px;
+    }
+
+
+    /* management team section */
+    
+    .management-section h4{
+        width: 60%;
+    }
+    
+    .management-section .card-box{
+        width: 95%;
+    }
+    
+    .management-section .card-box .card{
+        padding: 0px 20px;
+    }
+
+
+
+    /*   business section   */
+
+    .business-section, .partnership-section, .fundamental-section{
+        padding: 50px 0px;
+        margin: 0;
+    }
+
+    .business-section .business-content{
+        width: 80%;
+        padding: 0px 50px;
+    } 
+
+    .business-section .business-content h4{
+        font-size: 24px;
+        font-weight: 600;
+        width: 90%;
+    }
+
+
+    /* business section, partnership-section, fundamental-section   */
+    
+    .business-section, .partnership-section, .fundamental-section{
+        padding: 50px 0px;
+        margin: 0;
+    }
+
+    .business-content,
+    .partnership-content,
+    .fundamental-content{
+        padding: 0px 50px;
+    }
+
+    .business-content h4,
+    .partnership-content h4,
+    .fundamental-content h4{
+        font-size: 26px;
+    }
+
+    .business-content p,
+    .partnership-content p,
+    .fundamental-content p{
+        font-size: 16px;
+        margin-top: 20px;   
+    }
+
+    .business-img,
+    .partnership-img,
+    .fundamental-img{
+        padding: 0px 50px;
+    }
+
+    .business-img img,
+    .partnership-img img,
+    .fundamental-img img{
+        width: auto;
+        height: auto;
+    }
+
+
+
+    /* investment entity */
+    
+    .investment-box h4{
+        font-size: 26px;
+        width: 30%;
+    }
+
+    .investment-box .investment-cards{
+        width: 90%;
+    }
+
+    .investment-box .investment-cards .invest-card{
+        padding: 50px 20px;
+    }
+
+    .investment-box .investment-cards .invest-card .investment-card-img img{
+        width: auto;
+        height: 100%;
+    }
+
+    .investment-box .investment-cards .invest-card .invest-card-h4{
+        font-size: 18px;
+    }
+
+    .investment-box .investment-cards .invest-card p{
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+
+    /* wealth content */
+
+    .wealth-back .background-wealth .main-content .content1 h3, .content2 h3, .content3 h3{
+        font-size: 34px;
+    }
+
+    .wealth-back .background-wealth .main-content .content1 p, .content2 p, .content3 p{
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .background{
+        height: auto;
+    }
+    
+    header{
+        flex-direction: column;
+    }
+
+    .header-logo img{
+        justify-content: center;
+    }
+
+    .wrapper{
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .wrapper nav a{
+        padding: 0px 10px;
+    }
+
+    .menubar {
+        display: none;
+    }
+    
+    .header-btn button{
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        margin-bottom: 50px;
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .background .heading{
+        padding-top: 10px;
+        padding-bottom: 150px;
+    }
+
+    .background .heading p{
+        font-size: 30px;
+    }
+
+    .heading-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-btn .all-btn{
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .background .heading-btn button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+
+    /* white-box card section */
+
+    .white-box{
+        margin: -120px 50px;
+    }
+
+    .white-box .define-card, .strategy-card, .build-card{
+        margin: 50px 15px;
+    }
+    
+    .white-box .define-card .all-img img, .strategy-card .all-img img, .build-card .all-img img{
+        width: auto;
+        height: 30px;
+    }
+    
+    .white-box .define-card h4, .strategy-card h4, .build-card h4{
+        margin: 5px 0px;
+        font-size: 18px;
+    } 
+    
+    .define-card p, .strategy-card p, .build-card p{
+        font-size: 14px;
+        text-align: left;
+    }
+
+
+    /* fund section */
+
+    .funds{
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .funds .fund-content{
+        width: 100%;
+    }
+    
+    
+    .funds .fund-content .funds-points .first-part-points, .second-part-points{
+        margin-top: 30px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point, .s-point, .t-point,
+    .second-part-points .f-point, .s-point, .t-point{
+        margin-top: 20px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point i, .s-point i, .t-point i,
+    .second-part-points .f-point i, .s-point i, .t-point i{
+        font-size: 18px;
+    }
+    
+    .funds .fund-img{
+        padding: 30px;
+        width: 80%;
+    }
+    
+    .funds .fund-img img{
+        width: 400px;
+        height: auto;
+    }
+
+
+
+    /* management team section */
+
+    .management-section{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .management-section h4{
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .management-section .card-box{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        margin-top: 30px;
+    }
+
+    .management-section .card-box .card{
+        padding: 30px 0px;
+    }
+
+    .management-section .card-box .card .card-img img{
+        width: auto;
+        height: 100px;
+    }
+
+    .management-section .card-box .card h5{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .management-section .card-box .card p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+
+     /* business section, partnership-section, fundamental-section   */
+
+    .business-section, .partnership-section, .fundamental-section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .business-section{
+        padding-top: 50px;
+    }
+    
+    .fundamental-section{
+        padding-bottom: 50px;
+    }
+
+    .partnership-section .partnership-content{
+        order: 1;
+    }
+
+    .partnership-section .partnership-img{
+        order: 2;
+    }
+
+    .business-content,
+    .partnership-content,
+    .fundamental-content{
+        padding: 0px 50px;
+    }
+
+    .business-content h4,
+    .partnership-content h4,
+    .fundamental-content h4{
+        font-size: 26px;
+    }
+
+    .business-content p,
+    .partnership-content p,
+    .fundamental-content p{
+        font-size: 16px;
+        margin-top: 20px;   
+    }
+
+    .business-img,
+    .partnership-img,
+    .fundamental-img{
+        padding: 50px 50px;
+    }
+
+    .business-img img,
+    .partnership-img img,
+    .fundamental-img img{
+        width: auto;
+        height: auto;
+    }
+
+
+
+    /* investment entity */
+    
+    .investment-box h4{
+        font-size: 24px;
+        width: 35%;
+    }
+
+    .investment-box .investment-cards{
+        width: 90%;
+    }
+
+    .investment-box .investment-cards .invest-card{
+        padding: 50px 20px;
+    }
+
+    .investment-box .investment-cards .invest-card .investment-card-img img{
+        width: auto;
+        height: 100%;
+    }
+
+    .investment-box .investment-cards .invest-card .invest-card-h4{
+        font-size: 18px;
+    }
+
+    .investment-box .investment-cards .invest-card p{
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+
+    /* wealth content */
+
+    .wealth-back .background-wealth .main-content .content1 h3, .content2 h3, .content3 h3{
+        font-size: 30px;
+    }
+
+    .wealth-back .background-wealth .main-content .content1 p, .content2 p, .content3 p{
+        font-size: 14px;
+        width: 80%;
+        text-align: center;
+    }
+
+
+    /* footer section */
+
+    footer .footer-section .icons img{
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+    }
+
+    footer .footer-section .footer-content2{
+        margin-left: 50px;
+    }
+
+    footer .footer-section .footer-content2 h4, .footer-content3 h4, .footer-content4 h4{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .first-p{
+        margin-top: 10px;
+    }
+
+    footer .footer-section .footer-content2 p, .footer-content3 p, .footer-content4 p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 4px 0px;
+    }
+
+    footer .footer-last-line p{
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media (min-width:425px) and (max-width:768px) {
+    .background{
+        height: auto;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .wrapper{
+        width: 100%;
+        display: none;
+        justify-content: space-between;
+    }
+    
+    .wrapper nav a{
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 10px;
+        display: inline-block;
+        justify-content: start;
+        text-align: left;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+    
+    .header-btn button{
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .background .heading{
+        padding: 100px 50px;
+    }
+
+    .background .heading p{
+        font-size: 26px;
+        margin-top: -50px;
+    }
+
+    .heading-btn .all-btn{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .background .heading-btn button{
+        margin-top: 20px;
+    }
+
+
+     /* white-box card section */
+
+    .white-box{
+        margin: -80px 50px;
+    }
+
+    .white-box .card{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .white-box .define-card, .strategy-card, .build-card{
+        margin: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .white-box .define-card .all-img img, .strategy-card .all-img img, .build-card .all-img img{
+        width: auto;
+        height: 30px;
+    }
+    
+    .white-box .define-card h4, .strategy-card h4, .build-card h4{
+        margin-top: -20px;
+        font-size: 18px;
+    } 
+    
+    .define-card p, .strategy-card p, .build-card p{
+        font-size: 14px;
+        text-align: center;
+        width: 70%;
+    }
+
+
+    /* fund section */
+
+    .funds{
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .funds .fund-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .funds .fund-content h4{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .funds .fund-content .funds-points{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .funds .fund-content .funds-points .first-part-points{
+        margin: 0px;
+    }
+
+    .funds .fund-content .funds-points .first-part-points, .second-part-points{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 0px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point, .s-point, .t-point,
+    .second-part-points .f-point, .s-point, .t-point{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 20px;
+    }
+
+    .funds .fund-content .funds-points .second-part-points{
+        margin-left: 0px;
+        margin-top: 0px;
+        justify-content: start;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point i, .s-point i, .t-point i,
+    .second-part-points .f-point i, .s-point i, .t-point i{
+        font-size: 16px;
+    }
+
+    .funds .fund-content .funds-points .first-part-points .f-point p, .s-point p, .t-point p,
+    .second-part-points .f-point p, .s-point p, .t-point p{
+        font-size: 14px;
+    }
+    
+    .funds .fund-img{
+        padding: 30px;
+        width: 100%;
+    }
+    
+    .funds .fund-img img{
+        width: 400px;
+        height: auto;
+    }
+
+
+
+    /* management team section */
+
+    .management-section{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .management-section h4{
+        font-size: 22px;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .management-section .card-box{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        margin-top: 30px;
+    }
+
+    .management-section .card-box .card{
+        padding: 30px 0px;
+    }
+
+    .management-section .card-box .card .card-img img{
+        width: auto;
+        height: 100px;
+    }
+
+    .management-section .card-box .card h5{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .management-section .card-box .card p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+
+    
+    /* business section, partnership-section, fundamental-section   */
+
+    .business-section, .partnership-section, .fundamental-section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .business-section{
+        padding-top: 50px;
+    }
+    
+    .fundamental-section{
+        padding-bottom: 0px;
+    }
+
+    .partnership-section .partnership-content{
+        order: 1;
+    }
+
+    .partnership-section .partnership-img{
+        order: 2;
+    }
+
+    .business-content,
+    .partnership-content,
+    .fundamental-content{
+        padding: 0px 50px;
+    }
+
+    .business-section .business-content h4,
+    .partnership-section .partnership-content h4,
+    .fundamental-section .fundamental-content h4{
+        font-size: 22px;
+    }
+
+    .business-content p,
+    .partnership-content p,
+    .fundamental-content p{
+        font-size: 14px;
+        margin-top: 20px;   
+    }
+
+    .business-img,
+    .partnership-img,
+    .fundamental-img{
+        padding: 50px 50px;
+    }
+
+    .business-img img,
+    .partnership-img img,
+    .fundamental-img img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /* investment entity */
+
+    .investment-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .investment-box h4{
+        font-size: 22px;
+        width: 60%;
+    }
+
+    .investment-box .investment-cards{
+        display: grid; 
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+        width: 90%;
+    }
+
+    .investment-box .investment-cards .invest-card{
+        padding: 30px 20px;
+    }
+
+    .investment-box .investment-cards .invest-card .investment-card-img img{
+        width: auto;
+        height: 100%;
+    }
+
+    .investment-box .investment-cards .invest-card .invest-card-h4{
+        font-size: 18px;
+    }
+
+    .investment-box .investment-cards .invest-card p{
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+
+    /* wealth content */
+
+    .wealth-back .background-wealth .main-content{
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .wealth-back .background-wealth .main-content .content2, .content3{
+        margin-top: 30px;
+    }
+
+    .wealth-back .background-wealth .main-content .content1 h3, .content2 h3, .content3 h3{
+        font-size: 26px;
+    }
+
+    .wealth-back .background-wealth .main-content .content1 p, .content2 p, .content3 p{
+        font-size: 14px;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* footer section */
+
+    footer .footer-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    footer .footer-section .logo img{
+        width: 100px;
+        height: 100%;
+    }
+
+    footer .footer-section .icons img{
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+    }
+
+    footer .footer-section .footer-content2{
+        margin-left: 0px;
+    }
+
+    footer .footer-section .footer-content2 h4, .footer-content3 h4, .footer-content4 h4{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .first-p{
+        margin-top: 10px;
+    }
+
+    footer .footer-section .footer-content2 p, .footer-content3 p, .footer-content4 p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 4px 0px;
+    }
+
+    footer .footer-last-line p{
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width:200px) and (max-width:425px) {
+    .background{
+        height: auto;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .wrapper{
+        width: 100%;
+        display: none;
+        justify-content: space-between;
+    }
+    
+    .wrapper nav a{
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 10px;
+        font-size: 14px;
+        display: inline-block;
+        justify-content: start;
+        text-align: left;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+    
+    .header-btn button{
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .background .heading{
+        padding: 150px 30px;
+    }
+
+    .background .heading p{
+        font-size: 22px;
+        margin-top: -120px;
+    }
+
+    .heading-btn .all-btn{
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    .background .heading-btn button{
+        margin-top: 20px;
+    }
+
+
+     /* white-box card section */
+
+     .white-box{
+        margin: -100px 30px;
+    }
+
+    .white-box .card{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .white-box .define-card, .strategy-card, .build-card{
+        margin: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .white-box .define-card .all-img img, .strategy-card .all-img img, .build-card .all-img img{
+        width: auto;
+        height: 25px;
+    }
+    
+    .white-box .define-card h4, .strategy-card h4, .build-card h4{
+        margin-top: -20px;
+        font-size: 16px;
+    } 
+    
+    .define-card p, .strategy-card p, .build-card p{
+        font-size: 12px;
+        text-align: center;
+        width: 80%;
+        margin: 5px 0px;
+    }
+
+
+
+    /* fund section */
+
+    .funds{
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .funds .fund-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .funds .fund-content .funds-points{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .funds .fund-content .funds-points .first-part-points{
+        margin: 0px;
+    }
+
+    .funds .fund-content .funds-points .first-part-points, .second-part-points{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 0px;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point, .s-point, .t-point,
+    .second-part-points .f-point, .s-point, .t-point{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 20px;
+    }
+
+    .funds .fund-content .funds-points .second-part-points{
+        margin-left: 0px;
+        margin-top: 0px;
+        justify-content: start;
+    }
+    
+    .funds .fund-content .funds-points .first-part-points .f-point i, .s-point i, .t-point i,
+    .second-part-points .f-point i, .s-point i, .t-point i{
+        font-size: 16px;
+    }
+
+    .funds .fund-content .funds-points .first-part-points .f-point p, .s-point p, .t-point p,
+    .second-part-points .f-point p, .s-point p, .t-point p{
+        font-size: 14px;
+    }
+    
+    .funds .fund-img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .funds .fund-img img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+     /* management team section */
+
+     .management-section{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .management-section h4{
+        font-size: 20px;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .management-section .card-box{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        margin-top: 30px;
+    }
+
+    .management-section .card-box .card{
+        padding: 20px 0px;
+    }
+
+    .management-section .card-box .card .card-img img{
+        width: auto;
+        height: 100px;
+    }
+
+    .management-section .card-box .card h5{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .management-section .card-box .card p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+
+
+    /* business section, partnership-section, fundamental-section   */
+
+    .business-section, .partnership-section, .fundamental-section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .business-section{
+        padding-top: 50px;
+    }
+    
+    .fundamental-section{
+        padding-bottom: 0px;
+    }
+
+    .partnership-section .partnership-content{
+        order: 1;
+    }
+
+    .partnership-section .partnership-img{
+        order: 2;
+    }
+
+    .business-content,
+    .partnership-content,
+    .fundamental-content{
+        padding: 0px 50px;
+    }
+
+    .business-section .business-content h4,
+    .partnership-section .partnership-content h4,
+    .fundamental-section .fundamental-content h4{
+        font-size: 20px;
+    }
+
+    .business-content p,
+    .partnership-content p,
+    .fundamental-content p{
+        font-size: 12px;
+        margin-top: 20px;   
+    }
+
+    .business-img,
+    .partnership-img,
+    .fundamental-img{
+        padding: 50px 50px;
+    }
+
+    .business-img img,
+    .partnership-img img,
+    .fundamental-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* investment entity */
+
+    .investment-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .investment-box h4{
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .investment-box .investment-cards{
+        display: grid; 
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+        width: 90%;
+    }
+
+    .investment-box .investment-cards .invest-card{
+        padding: 20px 20px;
+    }
+
+    .investment-box .investment-cards .invest-card .investment-card-img img{
+        width: auto;
+        height: 100%;
+    }
+
+    .investment-box .investment-cards .invest-card .invest-card-h4{
+        font-size: 16px;
+    }
+
+    .investment-box .investment-cards .invest-card p{
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+
+     /* wealth content */
+
+     .wealth-back .background-wealth .main-content{
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .wealth-back .background-wealth .main-content .content2, .content3{
+        margin-top: 30px;
+    }
+
+    .wealth-back .background-wealth .main-content .content1 h3, .content2 h3, .content3 h3{
+        font-size: 24px;
+    }
+
+    .wealth-back .background-wealth .main-content .content1 p, .content2 p, .content3 p{
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+    }
+
+
+
+    /* footer section */
+
+
+    footer .footer-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    footer .footer-section .icons img{
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+    }
+
+    footer .footer-section .footer-content2{
+        margin-left: 0px;
+    }
+
+    footer .footer-section .footer-content2, .footer-content3, .footer-content4{
+        color: var(--white);
+        margin-top: 20px;
+    }
+
+    footer .footer-section .footer-content2 h4, .footer-content3 h4, .footer-content4 h4{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .first-p{
+        margin-top: 10px;
+    }
+
+    footer .footer-section .footer-content2 p, .footer-content3 p, .footer-content4 p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 4px 0px;
+    }
+
+    footer .footer-last-line p{
+        font-size: 12px;
+    }
+
+    
+    footer .footer-last-line{
+        color: var(--white);
+        padding: 20px 0px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    footer .footer-last-line .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 6px 6px;
+    }
+    
+    footer .footer-last-line .content img{
+        height: 100%;
+        width: 20px;
+        padding-left: 10px;
+    }
+
+}

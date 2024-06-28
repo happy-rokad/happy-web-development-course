@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task-12</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+        }
+
+        h1{
+            font-family: poppins;
+            margin: 20px;
+            color: navy;
+        }
+
+
+        .box{
+            display: grid;
+            grid-template-columns: repeat(4, 250px);
+            grid-template-rows: repeat(4, 150px);
+            border: 3px solid black;
+            box-shadow: 1px 1px 30px 2px lightgray;
+            gap: 4px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box img:nth-child(1){
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .box img:nth-child(2){
+            /* grid-row: row-start/row-end; */
+            grid-row: 1/2;
+            /* grid-column: column-start/column-end; */
+            grid-column: 2/3;
+        }
+
+        .box img:nth-child(3){
+            /* grid-row: row-start/row-end; */
+            grid-row: 1/2;
+            /* grid-column: column-start/column-end; */
+            grid-column: 3/4;
+        }
+
+        .box img:nth-child(4){
+            /* grid-area: row-start/column-start/row-end/column-end; */
+            grid-area: 1/4/3/5;
+        }
+
+        .box img:nth-child(5){
+            /* grid-area: row-start/column-start/row-end/column-end; */
+            grid-area: 2/2/4/4;
+        }
+
+        .box img:nth-child(6){
+            /* grid-area: row-start/column-start/row-end/column-end; */
+            grid-area: 3/4/5/5;
+        }
+
+        .box img:nth-child(7){
+            /* grid-area: row-start/column-start/row-end/column-end; */
+            grid-area: 4/1/5/2;
+        }
+
+        .box img:nth-child(8){
+            /* grid-area: row-start/column-start/row-end/column-end; */
+            grid-area: 4/2/5/3;
+        }
+
+        .box img:nth-child(9){
+            /* grid-area: row-start/column-start/row-end/column-end; */
+            grid-area: 4/3/5/4;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>  Image Collage </h1>
+    <div class="box">
+        <img src="https://images.pexels.com/photos/6271522/pexels-photo-6271522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271526/pexels-photo-6271526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271534/pexels-photo-6271534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271538/pexels-photo-6271538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/18022961/pexels-photo-18022961/free-photo-of-couple-on-hilltop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271543/pexels-photo-6271543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271547/pexels-photo-6271547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271526/pexels-photo-6271526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/6271530/pexels-photo-6271530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    </div>
+</body>
+</html>

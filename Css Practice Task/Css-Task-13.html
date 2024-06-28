@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Css-Task-13</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 700px;
+            gap: 100px;
+            margin: 0px 100px;
+        }
+
+        .card{
+            width: 50%;
+            background-color: whitesmoke;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            box-shadow: 1px 1px 30px 3px lightgray;
+        }
+
+        .card2 .clippath, .card2 .btn{
+            background-image: linear-gradient(90deg, #d104f4, #8104ed);
+        }
+        
+        .card3 .clippath, .card3 .btn{
+            background-image: linear-gradient(90deg, #28ec7d, #0ea48d);
+        }
+
+        .clippath{
+            clip-path: ellipse(99% 65% at 6% 8%);
+            height: 500px;
+            background-image: linear-gradient(90deg, #f29f1f, #ef3812);
+            width: 100%;
+        }
+
+        .clippath i{
+            font-size: 100px;
+            color: white;
+            margin-top: 100px;
+        }
+
+        .heading, .description, .btn{
+            font-family: 'poppins' ,'serif';
+            margin: 5px 30px; 
+        }
+
+        .heading{
+            font-size: 24px;
+            color: black;
+            margin-top: -100px;
+            font-weight: bold;
+        }
+
+        .description{
+            font-size: 16px;
+            color: gray; 
+        }
+
+        .btn{
+            background-image: linear-gradient(90deg, #f29f1f, #ef3812);
+            color: white;
+            width: 100px;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        @media (min-width:1500px) and (max-width:2560px) {
+            body{
+                justify-content: space-evenly;
+                gap: 100px;
+                margin: 0px 100px;
+            }
+
+            .card{
+                width: 80%;
+
+            }
+        }
+
+        @media (min-width:900px) and (max-width:1500px) {
+            body{
+                justify-content: space-evenly;
+                gap: 50px;
+                margin: 0px 30px;
+            }
+
+            .card{
+                width: 100%;
+            }
+
+            .clippath i{
+                margin-top: 60px;
+            }
+
+            .heading{
+                padding-top: 20px;
+            }
+
+        }
+
+        @media  (min-width:700px) and (max-width:900px) {
+            body{
+                justify-content: space-evenly;
+                gap: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+
+            .card{
+                width: 100%;
+                margin: 5px;
+            }
+
+            .clippath i{
+                margin-top: 50px;
+            }
+
+            .heading{
+                padding-top: 10px;
+            }
+        }
+
+        @media  (max-width:700px) {
+            body{
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 60%;
+                margin: auto;
+            }
+
+            .card{
+                width: 100%;
+                margin-top: -50px;
+            }
+
+            .clippath i{
+                margin-top: 50px;
+            }
+
+            .heading{
+                padding-top: 10px;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="card" style="height: 500px;">
+        <div class="clippath"> <i class="fa-solid fa-code"></i> </div>
+        <div class="heading"> HTML </div>
+        <div class="description"> HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. </div>
+        <div class="btn"> Code </div>
+    </div>
+    <div class="card card2" style="height: 500px;">
+        <div class="clippath"> <i class="fa-brands fa-css3-alt"></i> </div>
+        <div class="heading"> CSS </div>
+        <div class="description"> CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. </div>
+        <div class="btn"> Code </div>
+    </div>
+    <div class="card card3" style="height: 500px;">
+        <div class="clippath"> <i class="fa-brands fa-node-js"></i> </div>
+        <div class="heading"> JavaScript </div>
+        <div class="description"> JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and everything else. </div>
+        <div class="btn"> Code </div>
+    </div>
+</body>
+</html>

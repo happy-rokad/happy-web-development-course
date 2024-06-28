@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(130, 130, 216), rgb(214, 214, 253), rgb(130, 130, 216));
+        }
+        
+        caption, p{
+            color: navy;
+            text-align: center;
+            font-family: poppins;
+            font-weight: bold;
+            font-size: 30px;
+            margin: 20px;
+        }
+        
+
+        table{
+            border-collapse: collapse;
+            border: 3px solid rgb(0, 0, 88);
+            background-color: rgb(237, 237, 255);
+            font-family: Arial;
+        }
+
+        th{
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        td{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        marquee{
+            color: red;
+            font-family: poppins;
+        }
+
+        dl{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- table design task 1 -->
+
+    <table border="1" align="center">
+        <caption> Task 1 - Education Table </caption>
+        <thead> 
+            <th colspan="6"> <span style="font-weight: bold; color: navy; font-size: 30px;"> All Results </span> </th>
+            <tr>
+                <th> No. </th>
+                <th> Standard </th>
+                <th> School or Collage Name </th>
+                <th> Passing Year </th>
+                <th> Rank / Percentage </th>
+                <th> Total Grad </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> 1. </td>
+                <td> 10 <sup> th </sup> </td>
+                <td> Gajera Viddyabdavan </td>
+                <td> 2014 </td>
+                <td> 78% </td>
+                <td rowspan="3"> A </td>
+            </tr>
+            <tr>
+                <td> 2. </td>
+                <td> 12 <sup> th </sup> </td>
+                <td> Gajera Viddyabdavan </td>
+                <td> 2016 </td>
+                <td> 68% </td>
+            </tr>
+            <tr>
+                <td> 3. </td>
+                <td> B.E. </td>
+                <td> Prime Institute of Engineering & Tecdnology </td>
+                <td> 2020 </td>
+                <td> CGPA - 8.54 </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    <marquee> 10th, 12th & B.E. Rank/Percentage show in This Table. Please Check  </marquee>
+                </td>   
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p> Task 2 - Course Detail Using <u> dt,dl & dd </u> tags </p>
+    
+    <dl> <span style="font-weight: bold; color: navy; font-size: 24px;"> Tops Technology </span>
+        <dt> FrontEnd Development </dt>
+        <dd> A Front-End Developer Course at TOPS Technologies provides technical expertise in HTML,
+            CSS, JavaScript, React, and Angular, making you a proficient web developer </dd>
+    </dl>
+  
+</body>
+</html>

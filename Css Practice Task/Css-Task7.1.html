@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task7.1</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        .card{
+            font-family: poppins;
+            color: rgb(32, 32, 32);
+            background-color: whitesmoke;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 1px 1px 30px 8px lightgray;
+        }
+
+        .card:hover{
+            transform: rotateY(360deg);
+            transition: 2s;
+        }
+
+        .card-info{
+            background-color: #555cf5;
+            width: 300px;
+            height: 20px;
+            padding: 50px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+       img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transform: translateY(20%);
+            border: 3px solid white;
+            object-fit: cover;
+            outline: 3px solid #555cf5;
+
+        }
+
+        .card-content{
+            padding: 40px 20px;
+        }
+
+        .name{
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .social-icon-img{
+                width: 30px;
+                height: 30px;
+                border: none;
+                outline: none;
+                filter: grayscale(100%);
+            }
+
+        .social-icon-img:hover{
+            filter: grayscale(0%);
+        }   
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .subscribe-btn, .message-btn{
+            background-color: #565af7;
+            color: white;
+            border-radius: 30px;
+            padding: 5px 25px;
+            border: 2px solid transparent;
+        }
+
+        .subscribe-btn:hover, .message-btn:hover{
+            border: 2px solid #565af7;
+            background-color: transparent;
+            color: #565af7;
+            transition: all 300ms;
+        }
+
+        .other{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-info">
+            <div class="card-img">
+                <img  src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile image"/> 
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="name"> CodingLab </div>
+            <div class="profession"> YouTuber & Blogger</div>
+            <div class="social-icons">
+                <img class="social-icon-img" src="../images/facebook_145802.png" />
+                <img class="social-icon-img" src="../images/twitter_3670151.png" />
+                <img class="social-icon-img" src="../images/instagram_4138124.png" />
+                <img class="social-icon-img" src="../images/youtube_3670147.png" />
+            </div>
+        
+            <div class="buttons">
+                <div class="subscribe-btn"> Subscribe </div>
+                <div class="message-btn"> Message </div>
+            </div>
+        </div>
+        <div class="other">
+            <div class="like">60.4K</div>
+            <div> | </div>
+            <div class="comment">20K</div>
+            <div>  | </div>
+            <div class="share">12.4K</div>
+        </div>
+    </div>
+</body>
+</html>

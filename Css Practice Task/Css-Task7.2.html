@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task7.2</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .card, .card2{
+            background-color: whitesmoke;
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 20px 5px lightgray;
+            font-family: poppins;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+            transition: all 300ms;
+            background-color: #cae6ff;
+            width: 350px;
+        }
+
+        .card2:hover{
+            transform: translateY(-10px);
+            transition: all 300ms;
+            background-color: #ffe6ca;
+            width: 350px;
+        }
+        .card3:hover{
+            transform: translateY(-10px);
+            transition: all 300ms;
+            background-color: #ffbdbc;
+            width: 350px;
+        }
+
+        .card-info{
+            padding: 0px 20px;
+        }
+
+        img{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        button{
+            margin-top: 10px;
+            background-color: #2f91ee;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            padding: 4px 8px;
+            font-size: 12px;
+        }
+
+        h3, p{
+            margin: 10px 0px; 
+        }
+
+        .user-info{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 50px;
+        }
+
+        #profile-img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .username{
+            font-weight: bold;
+        }
+
+        .user-time{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-img">
+            <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="img">
+        </div>
+        <div class="card-info">
+            <div class="card-btn">
+                <button> Technology </button>
+            </div>
+            <div class="card-content">
+                <h3> What's New In 2022 Tech </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique impedit debitis doloribus vitae accusantium nobis officia sequi unde dolores!</p>
+            </div>
+            <div class="user-info">
+                <div class="profile-img">
+                    <img src="https://a.storyblok.com/f/191576/1200x800/faa88c639f/round_profil_picture_before_.webp" id="profile-img" alt="profile image">
+                </div>
+                <div class="userthing">
+                    <div class="username"> Jane Doe </div>
+                    <div class="user-time"> 2h ago </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card2">
+        <div class="card-img">
+            <img src="https://www.health.com/thmb/CRtolKrnvozjmASKcEGoG_h4hcw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-GettyImages-1480953386-27f549e4681b4f8eb319ada84bf5b98d.jpg" alt="img">
+        </div>
+        <div class="card-info">
+            <div class="card-btn">
+                <button style="background-color: #e0a461;"> food </button>
+            </div>
+            <div class="card-content">
+                <h3> Delicious Food </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique impedit debitis doloribus vitae accusantium nobis officia sequi unde dolores!</p>
+            </div>
+            <div class="user-info">
+                <div class="profile-img">
+                    <img src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1708041600&semt=ais" id="profile-img" alt="profile image">
+                </div>
+                <div class="userthing">
+                    <div class="username"> Jany Doe </div>
+                    <div class="user-time"> Yesterday </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card3">
+        <div class="card-img">
+            <img src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?b=1&s=612x612&w=0&k=20&c=TzJqI5QOIOzheXEI0RFXYvTWMbzMaTkPk8PvC-SU0OA=" alt="img">
+        </div>
+        <div class="card-info">
+            <div class="card-btn">
+                <button style="background-color: #e8413d;"> automobile </button>
+            </div>
+            <div class="card-content">
+                <h3> Race to your Heart Content </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique impedit debitis doloribus vitae accusantium nobis officia sequi unde dolores!</p>
+            </div>
+            <div class="user-info">
+                <div class="profile-img">
+                    <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" id="profile-img" alt="profile image">
+                </div>
+                <div class="userthing">
+                    <div class="username"> John Doe </div>
+                    <div class="user-time"> 2d ago </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+
+    <style>
+        body{
+            background: radial-gradient(#b52b42, rgb(102, 0, 102));
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 50px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            justify-content: center;
+        }
+
+
+        h1{
+            font-family: arial;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        iframe{
+            height: 400px;
+            width: 600px;
+            border: none;
+        }
+
+        .image_map{
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="map_embed">    
+            <h1> Tops Technology: Map Embed </h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6799314943355!2d70.77238027474903!3d22.290111043265767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1706161014902!5m2!1sen!2sin"></iframe>
+        </div>
+        <div class="youtube_embed">    
+            <h1> Youtube Video Embed </h1>
+            <iframe src="https://www.youtube-nocookie.com/embed/ThEo-p_KcNw?si=kBgFVIwMfyKAkn2g&amp;start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="image_map">
+        <h1> Image Map Embed </h1>
+        <img src="images_task2/image.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="Book" title="Book" href="https://unsplash.com/s/photos/book-and-pen" coords="100,438,264,650" shape="rect">
+            <area target="_blank" alt="Laptop" title="Laptop" href="https://www.amazon.in/s?k=laptop&amp;crid=CK9ODC03RZKS&amp;sprefix=laptop%27%2Caps%2C275&amp;ref=nb_sb_noss_2" coords="340,175,380,322,379,657,876,659,873,319,919,172" shape="poly">
+            <area target="_blank" alt="Flower Pot" title="Flower Pot" href="https://www.flipkart.com/home-improvement/lawn-and-gardening/plants-and-planters/plant-containers/pr?sid=h1m,um7,sd1,oyg" coords="170,158,88" shape="circle">
+            <area target="_blank" alt="Coffee" title="Coffee" href="https://www.starbucks.com/menu/drinks/hot-coffees" coords="1007,349,72" shape="circle">
+            <area target="_self" alt="Pen" title="Pen" href="https://www.amazon.in/s?k=pen" coords="319,457,334,637" shape="rect">
+        </map>
+        </map>
+    </div>
+
+</body>
+</html>

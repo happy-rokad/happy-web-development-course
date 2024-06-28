@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> wave-generator-new </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background{
+            height: auto;
+            width: 100%;
+        }
+
+        .background .back-img{
+            width: 100%;
+            height: 600px;
+            background-image: url(https://images.pexels.com/photos/7504565/pexels-photo-7504565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .background .back-img .wave-path svg{
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            left: 0;
+            bottom: 0;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        .background .profile .profile-img1, .profile-img2, .profile-img3, .profile-img4, .profile-img5{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid white;
+            position: absolute;
+            background-size: cover;
+        }
+
+        .content1, .content2, .content3, .content4, .content5{
+            visibility: hidden;
+            position: absolute;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all 300ms;
+            z-index: -1;
+        }
+        
+        .content1{
+            top: 400px;
+            left: 180px; 
+        }
+        .content2{
+            top: 300px;
+            left: 430px; 
+        }
+        .content3{
+            top: 270px;
+            left: 680px; 
+        }
+        .content4{
+            top: 350px;
+            left: 935px; 
+        }
+        .content5{
+            top: 440px;
+            left: 1215px; 
+        }
+
+        
+        .background p{
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .background .profile .profile-img1{
+            top: 380px;
+            left: 200px;
+            z-index: 1;
+            background-image: url(https://images.pexels.com/photos/6001674/pexels-photo-6001674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        }
+        .background .profile .profile-img1:hover + .content1{
+            top: 500px;
+            left: 180px;
+            visibility: visible;
+            z-index: 1;
+        }
+        
+        .background .profile .profile-img2{
+            top: 270px;
+            left: 450px;
+            z-index: 1;
+            background-image: url(https://images.pexels.com/photos/3778212/pexels-photo-3778212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        }
+        .background .profile .profile-img2:hover + .content2{
+            top: 400px;
+            left: 430px;
+            visibility: visible;
+            z-index: 1;
+        }
+        
+        .background .profile .profile-img3{
+            top: 250px;
+            left: 720px;
+            z-index: 1;
+            background-image: url(https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        }
+        .background .profile .profile-img3:hover + .content3{
+            top: 380px;
+            left: 680px;
+            visibility: visible;
+            z-index: 1;
+        }
+        
+        .background .profile .profile-img4{
+            top: 350px;
+            left: 980px;
+            z-index: 1;
+            background-image: url(https://images.pexels.com/photos/6248679/pexels-photo-6248679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        }
+        .background .profile .profile-img4:hover + .content4{
+            top: 480px;
+            left: 940px;
+            visibility: visible;
+            z-index: 1;
+        }
+        
+        .background .profile .profile-img5{
+            top: 420px;
+            left: 1250px;
+            z-index: 1;
+            background-image: url(https://images.pexels.com/photos/10141157/pexels-photo-10141157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        }
+        .background .profile .profile-img5:hover + .content5{
+            top: 530px;
+            left: 1215px;
+            visibility: visible;
+            z-index: 1;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+<div class="background">
+    <div class="back-img">
+        <div class="wave-path">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,256C96,224,192,160,288,112C384,64,480,32,576,26.7C672,21,768,43,864,85.3C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+    </div>
+    <div class="profile">
+        <img class="profile-img1">
+        <div class="content1">
+            <h3> Web designer </h3>
+            <p> UI/UX Designer </p>
+        </div>
+        <img class="profile-img2">
+        <div class="content2">
+            <h3> App designer </h3>
+            <p> UI/UX Designer </p>
+        </div>
+        <img class="profile-img3">
+        <div class="content3">
+            <h3> FrontEnd Developer </h3>
+            <p> Web/App Designer </p>
+        </div>
+        <img class="profile-img4">
+        <div class="content4">
+            <h3> BackEnd Developer </h3>
+            <p> Web/App Designer </p>
+        </div>
+        <img class="profile-img5">
+        <div class="content5">
+            <h3> Graphic designer </h3>
+            <p> UI/UX Designer </p>
+        </div>
+    </div>
+        
+</div>
+    
+</body>
+</html>

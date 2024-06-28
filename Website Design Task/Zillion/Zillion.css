@@ -1,0 +1,572 @@
+
+:root{
+    --background-color: #F1F3F6;
+    --light-background-color-all: #f0f0f05c;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , 'serif';
+}
+
+body{
+    background-color: var(--light-background-color-all);
+}
+
+/* Common css */
+
+.all-btn{
+    padding: 10px 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.background{
+    background-image: url("../Zillion/image/bg-img.png");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+
+
+.header-logo img{
+    display: flex;
+}
+
+.menubar{
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+.wrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    display: none;
+}
+
+#check-box:checked + .wrapper{
+    display: block;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0px 40px;
+}
+
+.background .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+
+.background .heading p{
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.background .heading-btn button{
+    background-color: var(--background-color);
+    color: var(--black);
+    margin-top: 50px;
+}
+
+
+
+
+/* white-box card section */
+
+.white-box{
+    height: auto;
+    margin: -120px 100px;
+    visibility: visible;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+.white-box .card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px var(--background-color);
+}
+
+.white-box .define-card, .strategy-card, .build-card{
+    margin: 50px 30px;
+}
+
+.white-box .define-card .all-img, .strategy-card .all-img, .build-card .all-img{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-box .define-card h4, .strategy-card h4, .build-card h4{
+    margin: 10px 0px;
+    font-size: 22px;
+} 
+
+.define-card p, .strategy-card p, .build-card p{
+    margin: 10px 0px;
+    text-align: left;
+}
+
+
+
+/* fund section */
+
+.funds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.funds .fund-content{
+    padding: 50px;
+    width: 60%;
+}
+
+.funds .fund-content .fund-content-p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.funds .fund-content h4{
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.funds .fund-content .funds-points{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.funds .fund-content .funds-points .first-part-points, .second-part-points{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.funds .fund-content .funds-points .second-part-points{
+    margin-left: 60px;
+}
+
+.funds .fund-content .funds-points .first-part-points .f-point, .s-point, .t-point,
+.second-part-points .f-point, .s-point, .t-point{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.funds .fund-content .funds-points .first-part-points .f-point i, .s-point i, .t-point i,
+.second-part-points .f-point i, .s-point i, .t-point i{
+    font-size: 20px;
+}
+
+.funds .fund-content .funds-points .first-part-points .f-point p, .s-point p, .t-point p,
+.second-part-points .f-point p, .s-point p, .t-point p{
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.funds .fund-img{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.funds .fund-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* management team section */
+
+
+.management-section{
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.management-section h4{
+    font-size: 26px;
+    width: 40%;
+    text-align: center;
+}
+
+.management-section .card-box{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    margin-top: 80px;
+}
+
+.management-section .card-box .card{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.management-section .card-box .card .card-img img{
+    width: auto;
+    height: 100px;
+}
+
+.management-section .card-box .card h5{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.management-section .card-box .card p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+
+
+/* business section, partnership-section, fundamental-section   */
+
+.business-section, .partnership-section, .fundamental-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.business-section{
+    padding-top: 50px;
+}
+
+.fundamental-section{
+    padding-bottom: 50px;
+}
+
+.business-content,
+.partnership-content,
+.fundamental-content{
+    padding: 0px 100px;
+}
+
+.business-section .business-content h4,
+.partnership-section .partnership-content h4,
+.fundamental-section .fundamental-content h4{
+    font-size: 26px;
+}
+
+.business-content p,
+.partnership-content p,
+.fundamental-content p{
+    font-size: 16px;
+    margin-top: 20px;   
+}
+
+.business-img,
+.partnership-img,
+.fundamental-img{
+    padding: 0px 100px;
+}
+
+.business-img img,
+.partnership-img img,
+.fundamental-img img{
+    width: auto;
+    height: auto;
+}
+
+
+
+
+/* investment entity */
+
+.investment-box{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.investment-content{
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    width: 90%;
+    box-shadow: 0px 0px 20px 2px var(--background-color);  
+}
+
+.investment-box h4{
+    font-size: 26px;
+    width: 25%;
+}
+
+.investment-box .investment-cards{
+    display: grid; 
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    padding: 0px 0px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.investment-box .investment-cards .invest-card{
+    padding: 30px 30px;
+}
+
+.investment-box .investment-cards .invest-card .investment-card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-box .investment-cards .invest-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.investment-box .investment-cards .invest-card .investment-card-img img{
+    width: auto;
+    height: 100%;
+}
+
+.investment-box .investment-cards .invest-card .invest-card-h4{
+    font-size: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.investment-box .investment-cards .invest-card p{
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+
+
+/* wealth content */
+
+
+.wealth-back .background-wealth{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: -250px;
+    z-index: -1;
+    background-image: url("../Zillion/image/bg-img.png");
+    display: flex;
+    justify-content: center;
+}  
+
+.wealth-back .background-wealth .main-content{
+    padding-top: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.wealth-back .background-wealth .main-content .content1, .content2, .content3{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wealth-back .background-wealth .main-content .content1 h3, .content2 h3, .content3 h3{
+    font-size: 36px;
+}
+
+.wealth-back .background-wealth .main-content .content1 p, .content2 p, .content3 p{
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+}
+
+
+
+/* contact us */
+
+.contact-us-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.contact-us-section h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact-us-section .contact-us-btn button{
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 30px;
+}
+
+.contact-us-section .all-btn{
+    padding: 10px 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+
+
+/* footer section */
+
+footer{
+    background-color: var(--black);
+    padding: 50px 50px;
+}
+
+footer .footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .footer-section .icons{
+    margin-top: 10px;
+}
+
+footer .footer-section .icons img{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+footer .footer-section .footer-content2{
+    margin-left: 200px;
+}
+
+footer .footer-section .footer-content2, .footer-content3, .footer-content4{
+    color: var(--white);
+}
+
+footer .footer-section .footer-content2 h4, .footer-content3 h4, .footer-content4 h4{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.first-p{
+    margin-top: 15px;
+}
+
+footer .footer-section .footer-content2 p, .footer-content3 p, .footer-content4 p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 6px 0px;
+}
+
+
+footer .footer-last-line{
+    color: var(--white);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .footer-last-line p{
+    font-size: 14px;
+}
+
+footer .footer-last-line .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 6px;
+}
+
+footer .footer-last-line .content img{
+    height: 100%;
+    width: auto;
+    padding-left: 10px;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Card Layout </title>
+    <link rel="stylesheet" href="Assignment2-mediaquery(CSS-part).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        :root{
+            --background-color: #F1F3F6;
+            --white: #FFFFFF;
+            --black: #000000;
+            --lightgray: #e0e0e0;
+            --all-btn: #e74b3c;
+            --dark-gray: #1f1f1f;
+        }
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins','serif';
+        }
+
+        body{
+            margin: 50px auto;
+        }
+
+        .card-layout{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            column-gap: 50px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+
+        .card-layout .card{
+            width: 350px;
+            height: auto;
+            background-color: var(--white);
+            box-shadow: 1px 1px 20px 2px var(--lightgray);
+        }
+
+        .card-layout .card .image img{
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .card-layout .card .content, .btns{
+            font-size: 14px;
+            padding: 0px 20px;
+            margin: 10px 0px;
+        }
+
+        .card-layout .card .btns button{
+            width: auto;
+            padding: 5px 20px;
+            border: 2px solid var(--lightgray);
+            margin-bottom: 10px;
+        }
+
+        @media (min-width:1150px) and (max-width:2560px){
+            .card-layout{
+                width: 100%;
+                column-gap: 30px;
+                row-gap: 20px;
+            }
+
+            .card-layout .card{
+                width: 300px;
+            }
+        }
+
+        @media (min-width:766px) and (max-width:1150px){
+            .card-layout{
+                width: 100%;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(3, auto);
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+
+            .card-layout .card{
+                width: 300px;
+            } 
+        }
+
+        @media (min-width:460px) and (max-width:766px){
+            .card-layout{
+                width: 100%;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(3, auto);
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+
+            .card-layout .card{
+                width: 220px;
+            } 
+
+            .card-layout .card .image img{
+                height: 120px;
+            }
+            
+            .card-layout .card .content, .btns{
+                font-size: 12px;
+                padding: 0px 10px;
+            }
+            
+            .card-layout .card .btns button{
+                padding: 3px 12px;
+            }
+        }
+
+        @media (min-width:200px) and (max-width:460px){
+            .card-layout{
+                width: 100%;
+                grid-template-columns: repeat(1, auto);
+                grid-template-rows: repeat(3, auto);
+                row-gap: 10px;
+            }
+
+            .card-layout .card{
+                width: 250px;
+            } 
+
+            .card-layout .card .image img{
+                height: 150px;
+            }
+            
+            .card-layout .card .content, .btns{
+                font-size: 14px;
+                padding: 0px 10px;
+                margin: 5px 0px;
+            }
+            
+            .card-layout .card .btns button{
+                padding: 5px 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="card-layout">
+        <div class="card">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/8681169/pexels-photo-8681169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="card-layout img1">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore soluta, natus quam deleniti esse!
+            </div>
+            <div class="btns">
+                <button> View </button>
+                <button> Edit </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/10783731/pexels-photo-10783731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="card-layout img2">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore soluta, natus quam deleniti esse!
+            </div>
+            <div class="btns">
+                <button> View </button>
+                <button> Edit </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/5667692/pexels-photo-5667692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="card-layout img3">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore soluta, natus quam deleniti esse!
+            </div>
+            <div class="btns">
+                <button> View </button>
+                <button> Edit </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/6876578/pexels-photo-6876578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="card-layout img4">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore soluta, natus quam deleniti esse!
+            </div>
+            <div class="btns">
+                <button> View </button>
+                <button> Edit </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/8467064/pexels-photo-8467064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="card-layout img5">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore soluta, natus quam deleniti esse!
+            </div>
+            <div class="btns">
+                <button> View </button>
+                <button> Edit </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/14118340/pexels-photo-14118340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="card-layout img6">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore soluta, natus quam deleniti esse!
+            </div>
+            <div class="btns">
+                <button> View </button>
+                <button> Edit </button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+</body>
+</html>

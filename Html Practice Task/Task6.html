@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+
+    <style>
+        body{
+            background-image: radial-gradient(rgb(214, 245, 255), pink, yellow);
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .box2{
+            margin-left: 50px;
+        }
+
+        form{
+            font-family: poppins;
+        }
+
+        fieldset{
+            color: white;
+            border: 3px dashed navy;
+            width: 600px;
+        }
+
+        legend{
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+
+        input, select{
+            width: 250px;
+            height: 40px;
+            border: 2px solid navy;
+            border-radius: 5px;
+            margin-left: 6px;
+        }
+
+        ::placeholder{
+            font-size: 16px;
+            padding: 10px;
+            font-weight: bold;
+            font-family: arial;
+            color: gray;
+        }
+
+        #width{
+            width: 150px;
+        }
+
+        label{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1">
+            <form>
+                <fieldset>
+                    <legend> Personal Info </legend> <br>
+    
+                    <label> Name: </label>
+                    <input type="text" placeholder="Enter Your Name" minlength="4" maxlength="20" required /> <br><br>
+                    <label> Email: </label>
+                    <input type="email" placeholder="Enter Your Email" required/> <br><br>
+                    <label> Pwd: </label>  
+                    <input type="password" placeholder="Enter Your password" required/> <br><br>
+                    <label> DOB: </label> 
+                    <input type="date"/> <br><br>  
+                    <label> City: </label>
+                    <select>
+                        <option value="rajkot" selected> Rajkot </option>   
+                        <option value="rajkot"> Surat </option>   
+                        <option value="rajkot"> Baroda </option>   
+                        <option value="rajkot"> Ahmedabad </option>   
+                    </select>  
+                    <br><br>
+                    <input type="submit" id="width"/> 
+                    <input type="reset" id="width" /> <br><br>
+    
+                </fieldset>
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <div class="box2">
+        <form>
+            
+            <fieldset>
+                <legend> Professional Info </legend> <br>
+
+                <label> Collage Name: </label>
+                <input type="text" placeholder="Enter Collage Name" minlength="4" maxlength="20" required /> <br><br>
+                <label> Your Education: </label>
+                <input list="education">
+                <datalist id="education">
+                    <option> B.E. </option>
+                    <option> B.Tech </option>
+                    <option> B.Farm </option>
+                </datalist>
+                <br><br>
+                <label> Your Branch: </label>  
+                <input type="password" placeholder="Enter Your Branch Name" required/> <br><br>
+                <label> Passing Year: </label> 
+                <input type="date"/> <br><br>  
+                <input type="submit" id="width"/> 
+                <input type="reset" id="width" /> <br><br>
+
+            </fieldset>
+
+        </form>
+        </div>
+    </div>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+
+    <style>
+        body{
+            background-image: radial-gradient(rgb(214, 245, 255), pink, yellow);
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .box2{
+            margin-left: 50px;
+        }
+
+        form{
+            font-family: poppins;
+        }
+
+        fieldset{
+            color: white;
+            border: 3px dashed navy;
+            width: 600px;
+        }
+
+        legend{
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+
+        input, select{
+            width: 250px;
+            height: 40px;
+            border: 2px solid navy;
+            border-radius: 5px;
+            margin-left: 6px;
+        }
+
+        ::placeholder{
+            font-size: 16px;
+            padding: 10px;
+            font-weight: bold;
+            font-family: arial;
+            color: gray;
+        }
+
+        #width{
+            width: 150px;
+        }
+
+        label{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1">
+            <form>
+                <fieldset>
+                    <legend> Personal Info </legend> <br>
+    
+                    <label> Name: </label>
+                    <input type="text" placeholder="Enter Your Name" minlength="4" maxlength="20" required /> <br><br>
+                    <label> Email: </label>
+                    <input type="email" placeholder="Enter Your Email" required/> <br><br>
+                    <label> Pwd: </label>  
+                    <input type="password" placeholder="Enter Your password" required/> <br><br>
+                    <label> DOB: </label> 
+                    <input type="date"/> <br><br>  
+                    <label> City: </label>
+                    <select>
+                        <option value="rajkot" selected> Rajkot </option>   
+                        <option value="rajkot"> Surat </option>   
+                        <option value="rajkot"> Baroda </option>   
+                        <option value="rajkot"> Ahmedabad </option>   
+                    </select>  
+                    <br><br>
+                    <input type="submit" id="width"/> 
+                    <input type="reset" id="width" /> <br><br>
+    
+                </fieldset>
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <div class="box2">
+        <form>
+            
+            <fieldset>
+                <legend> Professional Info </legend> <br>
+
+                <label> Collage Name: </label>
+                <input type="text" placeholder="Enter Collage Name" minlength="4" maxlength="20" required /> <br><br>
+                <label> Your Education: </label>
+                <input list="education">
+                <datalist id="education">
+                    <option> B.E. </option>
+                    <option> B.Tech </option>
+                    <option> B.Farm </option>
+                </datalist>
+                <br><br>
+                <label> Your Branch: </label>  
+                <input type="password" placeholder="Enter Your Branch Name" required/> <br><br>
+                <label> Passing Year: </label> 
+                <input type="date"/> <br><br>  
+                <input type="submit" id="width"/> 
+                <input type="reset" id="width" /> <br><br>
+
+            </fieldset>
+
+        </form>
+        </div>
+    </div>
+</body>
+>>>>>>> 3fd7f92dcab78338ec2f182bd99c0f9ef260a05f
+</html>

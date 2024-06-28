@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment 1 (HTML) </title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            background-color: aliceblue;
+            margin-top: 50px;
+            font-family: poppins;
+        }
+
+        table{
+            border-collapse: collapse;
+            border: 2px solid navy;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .image{
+            width: 100%;
+            height: 300px;
+        }
+
+        .container{
+            position: relative;
+            color: white;
+        }
+
+        .content{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-image: linear-gradient(90deg, rgb(254, 0, 42), blue);
+            height: 300px;
+            width: 100%;
+            opacity: 80%;
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-table{
+            padding: 10px;
+        }
+
+        #form-table1{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select{
+            padding: 10px;
+            border: 2px solid lightgray;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        iframe{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <table border="2">
+        <!-- 1st section table row & col -->
+        <tr>
+            <td rowspan="2"> <a href="home"> Home </a> </td>
+            <td rowspan="2"> <a href="about"> About  </a> </td>
+            <td rowspan="2"> <a href="contact"> Contact  </a> </td>
+            <td rowspan="2"> <a href="help"> Help   </a> </td>
+            <td rowspan="2"> <a href="store"> Store  </a> </td>
+            <td> <a href="download"> Download </a> </td>
+        </tr>
+        <tr>
+            <td> <a href="app"> App </a> </td>
+        </tr>
+
+        <!-- 2nd section image show -->
+        <tr>
+            <td colspan="6"> <img src="../images/image-new.png" /> </td>
+        </tr>
+        
+        <!-- 3rd section contact us row -->
+        <tr>
+            <td colspan="6"> Contact-Us-Page </td>
+        </tr>
+
+        <!-- 4th section contact us image & title with gradient -->
+        <tr>
+            <td colspan="6">
+                <div class="container">
+                    <img src="../images/pexels-photo-326055.jpeg" class="image" />
+                    <div class="content">
+                         Contact Us
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <!-- 5th section table form data -->
+        <tr>
+            <td colspan="3"> 
+                <form class="form-table">
+                    <label> First-Name: <input type="text" placeholder="Enter Your First Name" required/> </label> 
+                </form>
+            </td>
+            <td colspan="3"> 
+                <form class="form-table">
+                    <label> Last-Name: <input type="text" placeholder="Enter Your Last Name" required/> </label> 
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"> 
+                <form class="form-table">
+                    <label> Emial: <input type="email" placeholder="Enter Your Emial" required/> </label> 
+                </form>
+            </td>
+            <td colspan="3"> 
+                <form class="form-table">
+                    <label> Phone Number: <input type="text" placeholder="Enter Your Number" required/> </label> 
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"> 
+                <form class="form-table">
+                    <label> City </label>
+                    <select>
+                        <option> Surat </option>
+                        <option> Ahmedabad </option>
+                        <option> Rajkot </option>
+                        <option> Baroda </option>
+                    </select> 
+                </form>
+            </td>
+            <td colspan="3"> 
+                <form>
+                    <label> Gender: </label> 
+                    <input type="radio" name="gender" placeholder="Enter Your Number" id="form-table1" required/> Male 
+                    <input type="radio" name="gender" placeholder="Enter Your Number" id="form-table1" required/> Female  
+                    <input type="radio" name="gender" placeholder="Enter Your Number" id="form-table1" required/> Other  
+                </form>
+            </td>
+        </tr>
+
+
+        <!-- 6th section is  -->
+
+        <tr>
+            <td colspan="3"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6799314943355!2d70.77238027474903!3d22.290111043265767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1706161014902!5m2!1sen!2sin"></iframe>
+            </td>
+            <td colspan="3"> 
+                <iframe src="https://www.youtube-nocookie.com/embed/ThEo-p_KcNw?si=kBgFVIwMfyKAkn2g&amp;start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>
