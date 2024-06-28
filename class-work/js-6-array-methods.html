@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        
+        console.log(" Array Push Method ");
+        // new values add in push method
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        array.push('jayesh', 'jay');
+        console.log(array);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Push Method ");
+        // last value remove from the array in pop method
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        array.pop();
+        console.log(array);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Length Method ");
+        // show total length from the array in length method
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        console.log(array.length);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Shift Method ");
+        // remove from 1st value of array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        array.shift();
+        console.log(array);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Unshift Method ");
+        // add new value of start from array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        array.unshift(' jayesh ');
+        console.log(array);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Slice Method ");
+        // cut of array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        var newArray = array.slice(0, 2);
+        console.log(newArray);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Splice Method ");
+        // remove specific value from array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        array.splice(0, 2);
+        console.log(array);
+        
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        var RemoveData = array.splice(0, 2);
+        console.log(RemoveData);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Join Method ");
+        // join array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        var str = array.join();
+        console.log( str );
+        var str1 = array.join('--');
+        console.log( str1 );
+        
+        
+
+        console.log("-----------------------------");
+        console.log(" Array Delete Method ");
+        // delete array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        delete array[1];
+        console.log(array);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Concat Method ");
+        // merge array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        var array2 = [ 'jayesh', 'jay', 'khushbu' ];
+        var newArray = array.concat(array2);
+        console.log(newArray);
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Indexof Method ");
+        // check index of array
+
+        var array = [ 'happy', 'krisha', 'rekha' ];
+        console.log(array.indexOf('krisha'));
+        console.log(array.indexOf('new'));
+
+
+
+        console.log("-----------------------------");
+        console.log(" Array Sort Method ");
+        // sorting of array
+
+        var array = [ 'krisha', 'happy', 'rekha' ];
+        console.log(array.sort());
+
+        var array = [5, 4, 1, 3, 2];
+        console.log( ( array.sort( ( a, b) => {
+            // return a - b;
+            return b - a;
+        })) );
+
+
+
+        
+
+
+
+        </script>
+
+</body>
+</html>

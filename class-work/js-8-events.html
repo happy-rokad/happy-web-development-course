@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 50px;
+            width: auto;
+            padding: 0px 20px;
+            font-size: 20px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .inputs {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 30px;
+            width: auto;
+            padding: 0px 20px;
+            font-size: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<!-- <body onload="myfun()"> -->
+
+<body onresize="myfun()">
+
+    <!-- mouse events -->
+
+    <button onclick="oneclick()" class="btn"> Click </button>
+    <button ondblclick="doubleclick()" class="btn"> Double Click </button>
+    <button onmouseenter="mouseenter(event)" class="btn"> Mouse Enter </button>
+    <button onmouseleave="mouseleave(event)" class="btn"> Mouse Leave </button>
+    <button onmousedown="mousedown(event)" onmouseup="mouseup(event)" class="btn"> Mouse Down & Mouse Up </button>
+
+
+    <!-- keyboard events -->
+
+    <input type="text" onkeypress="adddata(event)" placeholder="keypress" class="inputs">
+    <input type="text" onkeydown="getdata(event)" placeholder="keydown" class="inputs">
+    <input type="text" onkeyup="realdata(event)" placeholder="keyup" class="inputs">
+
+
+    <!-- Form Events -->
+
+    <input type="text" onchange="changedata(event)" placeholder="changedata" class="inputs">
+
+    <select name="city" onchange="changedata(event)" class="inputs">
+        <option value="surat"> surat </option>
+        <option value="Baroda"> Baroda </option>
+        <option value="Ahmedabad"> Ahmedabad </option>
+    </select>
+
+
+    <input type="text" onblur="blurcolor(event)" onfocus="focuscolor(event)">
+    <input type="text" onselect="changetextcolor(event)">
+    <input type="text" onsearch="searchtext(event)">
+
+    <form onsubmit="submitbtn(event)">
+        Enter Name : <input type="text" id="data">
+        <input type="submit">
+    </form>
+
+</body>
+
+<script>
+
+    // mouse events functions
+
+    function oneclick() {
+        alert(' Now Click ');
+    }
+
+
+    function doubleclick() {
+        alert('Double Click');
+    }
+
+    function mouseenter(a) {
+        console.log(a.target);
+        a.target.style.color = "red";
+    }
+
+    function mouseleave(b) {
+        console.log(b.target);
+        b.target.style.color = "blue";
+    }
+
+    function mousedown(c) {
+        console.log(c.target);
+        c.target.style.backgroundColor = "yellow";
+    }
+
+    function mouseup(d) {
+        console.log(d.target);
+        d.target.style.backgroundColor = "red";
+    }
+
+
+    //  keyboard events functions
+
+    function adddata(e) {
+        console.log(e.target.value);
+    }
+
+    function getdata(f) {
+        console.log(f.target.value);
+    }
+
+    function realdata(g) {
+        console.log(g.target.value);
+    }
+
+
+    // Form Events function
+
+    function changedata(h) {
+        console.log(h.target.value);
+    }
+
+    function blurcolor(i) {
+        i.target.style.backgroundColor = "red";
+    }
+
+    function focuscolor(j) {
+        j.target.style.backgroundColor = "yellow";
+    }
+
+    function changetextcolor(k) {
+        k.target.style.color = "blue";
+        alert('selected text');
+    }
+
+    function searchtext(l) {
+        console.log(l.target.value);
+    }
+
+    function submitbtn(m) {
+        m.preventDefault();
+        // console.log('hii');
+        let data = document.getElementById('data').value;
+        console.log(data);
+    }
+
+
+    //  window events function
+
+    function myfun() {
+        alert('hii window');
+    }
+
+    function myfun() {
+        console.log(window.innerWidth);
+    }
+
+</script>
+
+</html>

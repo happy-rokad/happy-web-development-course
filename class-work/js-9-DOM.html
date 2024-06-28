@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- use h1 tag -->
+
+    <!-- use ID -->
+
+
+    <h1 id="data"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium. </h1>
+
+    <h1 id="data"> <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem harum ut cumque!
+            Repudiandae, pariatur magni. Recusandae facere natus nesciunt. </span> </h1>
+
+    <input type="text" id="inpt" value="7777">
+
+    <!-- use class -->
+
+    <h1> ---------------- </h1>
+
+    <h1 class="data"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium. </h1>
+
+    <h1 class="data"> <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem harum ut
+            cumque! Repudiandae, pariatur magni. Recusandae facere natus nesciunt. </span> </h1>
+
+    <h1 id="head"> </h1>
+
+    <input type="text" id="head1">
+
+
+    <script>
+
+        //  use ID
+
+        console.log('----------- use id ---------');
+        var head = document.getElementById('data').innerHTML;
+        var head = document.getElementById('data').innerText;
+        console.log(head);
+
+        var h = document.getElementById('inpt').value;
+        console.log(h);
+
+        //  use class
+
+        console.log('----------- use class ---------');
+        var head = document.getElementsByClassName('data');
+        console.log(head[1].innerHTML);
+        console.log(head);
+
+
+        //  use tag
+
+        console.log('----------- use tag ---------');
+        var head = document.getElementsByTagName('h1');
+        console.log(head[0].innerHTML);
+        console.log(head);
+
+        //  use querySelector 
+
+        console.log('----------- use querySelector ---------');
+
+        var head = document.querySelector('#data');
+        var head1 = document.querySelector('.data');
+        var head2 = document.querySelector('h1');
+        console.log(head);
+        console.log(head1);
+        console.log(head2);
+
+
+        console.log('----------- use querySelectorAll ---------');
+        var head3 = document.querySelectorAll('#data');
+        var head4 = document.querySelectorAll('.data');
+        var head5 = document.querySelectorAll('h1');
+        console.log(head3);
+        console.log(head4);
+        console.log(head5);
+
+
+
+        console.log('----------- HTML ma data moklva mate ---------');
+
+        document.getElementById('head').innerText = ' <span> hii text </span> ';
+        document.getElementById('head').innerHTML = ' <span> hii text </span> ';
+
+        document.getElementById('head1').value = '1234567';
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // star square pattern design
+
+        for ( i = 1; i <= 3; i++ ){
+            for ( j = 1; j <= 5; j++ ){
+                if (i == 2) {
+                    if (j == 1 || j == 5) {
+                        document.write('*');
+                    } else {
+                        document.write('&nbsp&nbsp');
+                    }
+                } else {
+                    document.write('*');
+                }
+            }
+            document.write('<br>');
+        }
+
+
+    
+        document.write("---------------------------------------");
+        document.write('<br>');
+        
+
+
+        for (i = 1; i <= 6; i++){
+            for (j = 1; j <= i; j++ ){
+                if (i == 3 || i == 4 || i == 5) {
+                    if (j == 2 || (i == 4 && j == 3) || ( i == 5 && (j == 3 || j == 4))){
+                        document.write('&nbsp&nbsp');
+                    } else {
+                        document.write('*');
+                    }
+                } else {
+                    document.write('*');
+                }
+            }
+            document.write('<br>');
+        }
+        
+        
+        document.write("---------------------------------------");
+        document.write('<br>');
+
+
+        for ( i = 1; i <= 6; i++ ) {
+           for ( j = 1; j <= 6; j++ ) {
+                if ( i == 1 || i == 2 || i == 3 || i == 4 || i == 5 ) {
+                    if ( (i == 1 && (j == 1 || j == 2 || j == 3 || j == 4 || j == 5)) ||
+                         (i == 2 && (j == 1 || j == 2 || j == 3 || j == 4)) || 
+                         (i == 3 && (j == 1 || j == 2 || j == 3)) ||
+                         (i == 4 && (j == 1 || j == 2)) ||
+                         (i == 5 && (j == 1)) ) {
+
+                        document.write('&nbsp&nbsp');
+                    } else {
+                        document.write('*');
+                    }
+                } else {
+                    document.write('*');
+                }
+           }
+           document.write('<br>'); 
+        }
+
+
+
+    </script>
+
+</body>
+</html>

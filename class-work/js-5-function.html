@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 4 Types : function lakhva mateni rit
+ 
+        // With parameter Without return
+
+
+        console.log("-----------------------------");
+        console.log("With parameter Without return");
+        
+        function sum ( a, b ) {
+            console.log( a + b );
+        }
+        sum(3, 2);
+        
+        
+        console.log("-----------------------------");
+        console.log("With parameter With return");
+        
+        function sum1 (a, b) {
+            return a + b;
+        }
+        var c = sum1 ( 4, 4);
+        console.log(c);
+
+        
+        console.log("-----------------------------");
+        console.log("Without parameter With return");
+
+        function sum2 ( ) {
+            return 2 + 2;
+        }
+        console.log(sum2());
+        
+        
+        console.log("-----------------------------");
+        console.log("Without parameter Without return");
+        
+        function sum3 () {
+            console.log(6);
+        }
+        sum3();
+        
+        
+        
+        console.log("-----------------------------");
+        console.log("-----------------------------");
+        
+        // 3 types of function
+        
+        // 1> Named function
+
+        console.log("-----------------------------");
+        console.log("3 types of function");
+        
+        
+        console.log("1> Named Function");
+        
+        function count (a, b) {
+            console.log( a + b );
+        }
+        count (3 , 4);
+        
+        
+        
+        console.log("-----------------------------");
+        console.log("2> Anonyms Function");
+
+        var count1 = function (a, b) {
+            console.log(a + b);
+        }
+        count1( 3, 5);
+
+
+
+        console.log("-----------------------------");
+        console.log("3> Immediate Function");
+        
+        (function (a) {
+            console.log(a);
+        }) (4)
+        
+        
+        
+        console.log("-----------------------------");
+        console.log(" program : celcious to ferenhit ");
+
+        function celToFeren (feren) {
+            return (feren-32)*5/9;
+        }
+        var f = celToFeren (0);
+        console.log(f);
+
+
+
+        console.log("-----------------------------");
+        console.log(" program : celcious to ferenhit get user value ");
+
+        var FerenHit = prompt (' Enter Value ')
+        function celToFeren (feren) {
+            return (feren-32)*5/9;
+        }
+        var f = celToFeren (FerenHit);
+        console.log(f);
+        alert(f);
+
+
+
+    </script>
+
+</body>
+</html>

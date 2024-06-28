@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="ul"> </ul>
+
+    <div id="time"> </div>
+
+    <script>
+
+        console.log('----------- for of loop -------------');
+        
+        let arr = ['happy', 'krisha', 'rekha']
+        
+        for (const x of arr) {
+            console.log(x);
+            let li = document.createElement('li');
+            li.innerText = x;
+            document.getElementById('ul').appendChild(li);
+        }
+        
+        
+        console.log('----------- for each loop -------------');
+        
+        arr.forEach(res => {
+            console.log(res);
+        });
+        
+
+        console.log('----------- for in loop -------------');
+        
+        let obj = { name : 'happy', age : 25, marks : 90 }
+        
+        for (const x in obj) {
+            console.log(obj[x]);
+        }
+        
+
+        console.log('----------- call back fun -------------');
+        
+        const sum = ( a, b, callback ) => {
+            return callback ( a+b, 2);
+        }
+        const multi = ( a, b ) => {
+            console.log( a * b );
+        }
+        sum ( 2, 3, multi );
+        
+        
+        console.log('----------- date fun -------------');
+
+        // setInterval( () => {
+        //     let d = Date();
+        //     console.log(d);
+        // } , 2000)
+
+        let d = Date();
+        console.log(d);
+
+
+        setInterval( () => {
+            let d = Date();
+            document.getElementById('time').innerText = d;
+        }, 1000 )
+
+
+
+    </script>
+
+</body>
+</html>

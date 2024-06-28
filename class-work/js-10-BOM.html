@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- BOM : browser object model -->
+
+    <button onclick="opentab()"> open tab new </button>
+    <button onclick="closetab()"> close tab new </button>
+
+    <button onclick="goback()"> back screen </button>
+    <button onclick="goforward()"> forward screen </button>
+
+
+    <script>
+
+        function opentab() {
+            tab = window.open();
+        }
+
+        function closetab() {
+            tab.close();
+        }
+
+        console.log('--------- window innerWidth & innerHeight----------');
+
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        console.log(w, h);
+
+
+        console.log('---------- screen height & width --------------');
+
+        console.log('height : ', screen.height);
+        console.log('width :', screen.width);
+        console.log('availbale height :', screen.availHeight);
+        console.log('available width :', screen.availWidth);
+
+
+        console.log('---------- window location detail --------------');
+
+        console.log('window href :', window.location.href);
+        console.log('window hostname :', window.location.hostname);
+        console.log('window pathname :', window.location.pathname);
+        console.log('window protocol :', window.location.protocol);
+
+
+        console.log('---------- history detail --------------');
+
+        function goback() {
+            window.history.back();
+        }
+
+        function goforward() {
+            window.history.forward();
+        }
+
+
+        console.log('---------- navigation detail --------------');
+
+        console.log('cookie-enable :', navigator.cookieEnabled);
+        console.log('appcode-name :', navigator.appCodeName);
+        console.log('platform :', navigator.platform);
+        console.log('online :', navigator.onLine);
+
+
+        console.log('---------- use prompt --------------');
+
+        var a = prompt('enter value');
+        console.log(a);
+
+        console.log('---------- use alert --------------');
+
+        alert('hiii');
+
+
+        console.log('---------- use condition --------------');
+
+        if (confirm('is ok') == true) {
+            console.log('yes i am ok');
+        } else {
+            console.log('not ok');
+        }
+
+
+        console.log('---------- use set Timeout --------------');
+
+        setTimeout(() => {
+            console.log('hello');
+        }, 3000)
+
+
+        console.log('---------- use set Interval --------------');
+
+        var i = 1;
+        setInterval(() => {
+            console.log('hyy');
+            i++;
+        }, 3000)
+
+    </script>
+
+</body>
+
+</html>
