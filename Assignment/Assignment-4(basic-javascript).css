@@ -1,0 +1,348 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+/* program 1 : calculator */
+
+.box1{
+    width: 40%;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 30px;
+}
+
+.box1 h1{
+    text-align: center;
+}
+
+.box1 form{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.box1 form .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.box1 form label{
+    font-weight: 600;
+}
+
+.box1 form input, button{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.box1 form button{
+    font-size: 24px;
+    font-weight: bold;
+    width: 60px;
+    background-color: rgb(245, 245, 245);
+}
+
+#plus{
+    margin-left: 0px;
+}
+
+
+
+/* ************************************************************** */
+
+/*  Program 2 : create result (Marksheet) */
+
+
+.result2{
+    width: 40%;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 30px;
+}
+
+
+.result2 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.result2 form .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.result2 form .row .col{
+    width: 30%;
+}
+
+.result2 form label{
+    font-weight: 600;
+}
+
+.result2 form input{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 150px;
+}
+
+.result2 form .new input{
+    padding: 0px;
+    border: 0px solid black;
+    border-radius: 0px;
+    margin-left: 0px;
+}
+
+.result2 form button{
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 150px;
+}
+
+
+
+/* ********************************************************* */
+
+/* Program 3 : Simple Slider */
+
+.slider{
+    margin-top: 50px;
+    height: 300px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: hidden;
+    position: relative;
+    transition: all 3000ms;
+}
+
+.slider .square{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .square1{
+    width: 500px;
+    height: 250px;
+    background-color: lightpink;
+}
+.slider .square2{
+    width: 500px;
+    height: 250px;
+    background-color: lightcoral;
+}
+.slider .square3{
+    width: 500px;
+    height: 250px;
+    background-color: lightskyblue;
+}
+.slider .square4{
+    width: 500px;
+    height: 250px;
+    background-color: lightgreen
+}
+.slider .square5{
+    width: 500px;
+    height: 250px;
+    background-color: lightblue;
+}
+.slider .square6{
+    width: 500px;
+    height: 250px;
+    background-color: lightgray;
+}
+
+.prev {
+    position: absolute;
+    font-size: 30px;
+    top: 70%;
+    left: 40%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.prev:hover,
+.next:hover {
+    background: white;
+}
+
+.next {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ********************************************************* */
+    
+/* Program 4 : Change BG Color */
+
+.box4{
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* ********************************************************* */
+    
+/* Program 5 : Password Hide & Show */
+
+.box5{
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5 input, button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+}
+
+.box5 button{
+    width: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ********************************************************* */
+    
+/* Program 6 : Form Validation */
+
+.box6{
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.box6 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.box6 form label{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(131, 131, 131);
+}
+
+.box6 form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+form span{
+    color: red;
+    font-size: 14px;
+}
+
+#button{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic javascript assignment</title>
+    <link rel="stylesheet" href="Assignment-4(basic-javascript).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <!-- program 1 : calculator  -->
+
+    <div class="box1">
+        <h1> Maths Operations </h1>
+
+        <form>
+
+            <div class="row">
+                <div class="col">
+                    <label for="enter 1st number"> Enter 1st Number : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="num1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="enter 2nd number"> Enter 2nd Number : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="num2">
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="button" id="plus" onclick="calculate('+')"> + </button>
+                <button type="button" onclick="calculate('-')"> - </button>
+                <button type="button" onclick="calculate('*')"> * </button>
+                <button type="button" onclick="calculate('/')"> / </button>
+                <button type="button" onclick="calculate('%')"> % </button>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="answer is"> Total Answer is : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="result" readonly>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <!-- ******************************************************************************************** -->
+
+    <!-- program 2 : create result (marksheet) -->
+
+    <div class="result2">
+        <h2> Marksheet for Information Technology </h2>
+        <h4> Enter Marks </h4>
+
+        <form>
+
+            <div class="row">
+                <div class="col">
+                    <label for="mark1"> 1. C Language : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mark2"> 2. C++ Language : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mark3"> 3. Database : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mark4"> 4. HTML : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mark5"> 5. CSS : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mark6"> 6. php : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mark7"> 7. Core Java : </label>
+                </div>
+                <div class="col">
+                    <input type="number" id="mark7">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="button" onclick="allSubjectsMarks()"> Result </button>
+                </div>
+            </div>
+
+            <div class="row new">
+                <label for="totalmarks"> Total is : </label>
+                <input type="text" id="totalmarks" readonly>
+            </div>
+            <div class="row new">
+                <label for="per"> Percentage is : </label>
+                <input type="text" id="per" readonly>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <!-- ******************************************************************************************** -->
+
+    <!-- program 3 : Simple Slider -->
+
+    <div class="slider">
+        <div class="square">
+            <div class="square1"></div>
+        </div>
+        <div class="square">
+            <div class="square2"></div>
+        </div>
+        <div class="square">
+            <div class="square3"></div>
+        </div>
+        <div class="square">
+            <div class="square4"></div>
+        </div>
+        <div class="square">
+            <div class="square5"></div>
+        </div>
+        <div class="square">
+            <div class="square6"></div>
+        </div>
+
+        <div>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-greater-than"></i> </a>
+            <a class="prev" onclick="plusSlides(1)"><i class="fa-solid fa-less-than"></i> </a>
+        </div>
+
+    </div>
+
+
+
+    <!-- ******************************************************************************************** -->
+
+    <!-- program 4 : Change BG Color -->
+
+    <div class="box4" id="colorbox">
+        <button type="button" onclick="changeColor()"> Change BG Color </button>
+    </div>
+
+
+
+    <!-- ******************************************************************************************** -->
+    <!-- program 5 : Password Hide & Show -->
+
+    <div class="box5">
+        <input type="password" id="passwordEnter" placeholder="Enter Password">
+        <button type="button" onclick="togglePassword()"> <i class="fa-regular fa-eye"></i> </button>
+    </div>
+
+
+    <!-- ******************************************************************************************** -->
+    <!-- program 6 : Form Validation -->
+
+    <div class="box6">
+        <h2> Sign Up </h2>
+
+        <form id="myform" onsubmit="validDataForm(event)">
+            <label for="username"> Username: </label>
+            <input type="text" id="username" placeholder="Enter Your Name">
+            <span id="usernameError"> </span>
+
+            <label for="email"> Email: </label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <span id="emailError"> </span>
+
+            <label for="password"> Password: </label>
+            <input type="password" id="password" placeholder="Enter Your Password">
+            <span id="passwordError"> </span>
+
+            <label for="confirmpassword"> Confirm Password: </label>
+            <input type="password" id="confirmpassword" placeholder="Enter Confirm Password">
+            <span id="confirmpasswordError"> </span>
+
+            <input type="submit" value="Sign Up" id="button" onclick="btnclick()" />
+        </form>
+    </div>
+
+
+
+
+
+    <script>
+
+        // program 1 : calculator
+
+        function calculate(event) {
+            var data1 = parseFloat(document.getElementById('num1').value);
+            var data2 = parseFloat(document.getElementById('num2').value);
+            var result;
+
+            switch (event) {
+                case '+':
+                    result = data1 + data2;
+                    break;
+                case '-':
+                    result = data1 - data2;
+                    break;
+                case '*':
+                    result = data1 * data2;
+                    break;
+                case '/':
+                    result = data1 / data2;
+                    break;
+                case '%':
+                    result = data1 % data2;
+                    break;
+
+                default:
+                    result = NaN;
+                    break;
+            }
+
+            document.getElementById('result').value = result;
+        }
+
+
+        // *************************************************************************
+
+        //  Program 2 : Create result (marksheet)
+
+        function allSubjectsMarks() {
+            var marks1 = parseFloat(document.getElementById('mark1').value);
+            var marks2 = parseFloat(document.getElementById('mark2').value);
+            var marks3 = parseFloat(document.getElementById('mark3').value);
+            var marks4 = parseFloat(document.getElementById('mark4').value);
+            var marks5 = parseFloat(document.getElementById('mark5').value);
+            var marks6 = parseFloat(document.getElementById('mark6').value);
+            var marks7 = parseFloat(document.getElementById('mark7').value);
+
+            var total = marks1 + marks2 + marks3 + marks4 + marks5 + marks6 + marks7;
+            var percentage = ((total / 350) * 100).toFixed(2);
+
+            document.getElementById('totalmarks').value = total + '/ 350';
+            document.getElementById('per').value = percentage + '%';
+        }
+
+
+
+        // *************************************************************************
+        //  Program 3 : Simple Slider
+
+        let index = 1;
+        showSlides(index)
+
+        function plusSlides(n) {
+            showSlides(index += n)
+        }
+        function showSlides(n) {
+            let i;
+            let slide = document.getElementsByClassName('square')
+            // console.log(slide);
+            if (n > slide.length) {
+                index = 1;
+            }
+
+            for (let i = 0; i < slide.length; i++) {
+                slide[i].style.display = 'none';
+            }
+            slide[index - 1].style.display = 'block';
+        }
+
+
+
+        // *************************************************************************
+
+        //  Program 4 : Change BG Color
+
+        function changeColor() {
+            var box = document.getElementById('colorbox');
+            var randomColor = getRandomColor();
+            box.style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+
+
+        // *************************************************************************
+
+        //  Program 5 : Password Hide & Show
+
+
+        function togglePassword(passwordEnter, toggleIcon) {
+            var passwordEnter = document.getElementById('passwordEnter');
+            var toggleIcon = document.getElementById('toggleIcon');
+            if (passwordEnter.type === 'password') {
+                passwordEnter.type = 'text';
+                toggleIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />';
+            } else {
+                passwordEnter.type = 'password';
+            }
+        }
+
+
+
+
+        // *************************************************************************
+
+        //  Program 6 : Form Validation
+
+
+        function validDataForm(event) {
+
+            event.preventDefault();
+
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmpassword = document.getElementById('confirmpassword').value.trim();
+
+            if (username.length < 3 || username.length > 25) {
+                document.getElementById('usernameError').innerText = ('username must be between 3 and 25');
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').innerText = ('Enter valid email id');
+                return false;
+            }
+
+            if (password.length < 8) {
+                document.getElementById('passwordError').innerText = ('password must has at least 8 character that include at least 1 lowercase character, 1 uppercase character, 1 number and 1 special character (!@#$%^&*)');
+                return false;
+            }
+
+            if (confirmpassword.length < 8) {
+                document.getElementById('confirmpasswordError').innerText = ('please enter the password again');
+                return false;
+            }
+
+            return true;
+
+
+        }
+
+        function btnclick() {
+            document.getElementById('myform').submit();
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
