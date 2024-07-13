@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="hide"> Hide </button>
+    <button id="show"> Show </button>
+    <button id="in"> fadeIn </button>
+    <button id="out"> fadeOut </button>
+    <button id="stop"> Stop </button>
+    <button id="fadetoggle"> fadeToggle </button>
+    <button id="toggle"> Toggle </button>
+    <div class="box" id="animate"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#hide').click(function () {
+                $('.box').hide(3000);
+            })
+            $('#show').click(function () {
+                $('.box').show(3000);
+            })
+            $('#in').click(function () {
+                $('.box').fadeIn(3000);
+            })
+            $('#out').click(function () {
+                $('.box').fadeOut(3000);
+            })
+            $('#stop').click(function () {
+                $('.box').stop(3000);
+            })
+            $('#fadetoggle').click(function () {
+                $('.box').fadeToggle(3000);
+            })
+            $('#toggle').click(function () {
+                $('.box').toggle(3000);
+            })
+
+
+            // animation box
+            $('#animate').click(function () {
+                $('.box').animate({ left: '500px', top: '200px' })
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

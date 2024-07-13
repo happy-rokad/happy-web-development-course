@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button> Button </button>
+    <input type="text">
+
+    <form action="">
+        <input type="text" id="name">
+        <input type="submit" value="submit">
+    </form>
+
+
+    <select name="city" id="city">
+        <option value="surat"> Surat </option>
+        <option value="bharuch"> Bharuch </option>
+        <option value="pune"> Pune </option>
+    </select>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // mouse event
+
+            $('button').click(function () {
+                $(this).css({ backgroundColor: 'red' });
+            });
+            $('button').dblclick(function () {
+                $(this).css({ backgroundColor: 'white' });
+            });
+            $('button').mousedown(function () {
+                $(this).css({ backgroundColor: 'blue' });
+            });
+            $('button').mouseup(function () {
+                $(this).css({ backgroundColor: 'yellow' });
+            });
+            $('button').mouseenter(function () {
+                $(this).css({ backgroundColor: 'pink' });
+            });
+            $('button').mouseleave(function () {
+                $(this).css({ backgroundColor: 'lightblue' });
+            });
+
+
+            // Keyboard Event
+
+            $('input').keypress(function () {
+                console.log($(this).val());
+            })
+            $('input').keydown(function () {
+                console.log($(this).val());
+            })
+            $('input').keyup(function () {
+                console.log($(this).val());
+            })
+
+            // Form Event
+
+            $('form').submit(function (e) {
+                e.preventDefault();
+                let name = $('#name').val();
+                alert(name);
+            })
+            $('input').blur(function () {
+                $(this).css({ backgroundColor: 'red' })
+            })
+            $('input').focus(function () {
+                $(this).css({ backgroundColor: 'orange' })
+            })
+
+            $('#city').change(function () {
+                alert($(this).val());
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

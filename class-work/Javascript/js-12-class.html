@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class fertocel{
+            constructor (f){
+                this.ferenhit = f;
+            }
+
+            convertUnit(){
+                console.log('fehrenhit to celsius : ' + ((this.ferenhit - 32)* 5/9) );
+            }
+        }
+
+        let convert1 = new fertocel(12)
+        convert1.convertUnit();
+
+
+    //  Inheritance class
+
+    // class A {
+    //     constructor(num1) {
+    //         this.a = num1;
+    //     }
+    //     aaa() {
+    //         console.log("this is class a");
+    //     }
+    // }
+
+    // class B extends A {
+    //     constructor(a) {
+    //         super(a);
+    //     }
+    //     bbb() {
+    //         console.log("this is class b");
+    //     }
+    // }
+
+    // class C extends B {
+    //     constructor(a) {
+    //         super(a);
+    //     }
+    //     ccc() {
+    //         console.log("this is class c");
+    //     }
+    // }
+
+    // let base = new C(1);
+    // base.bbb();
+
+
+    // class A {
+    //     constructor(num1) {
+    //         this.a = num1;
+    //     }
+    //     aaa() {
+    //         console.log("this is class a");
+    //     }
+    // }
+
+    // class B extends A {
+    //     constructor(a) {
+    //         super(a);
+    //     }
+    //     bbb() {
+    //         console.log("this is class b");
+    //     }
+    // }
+
+    // class C extends A {
+    //     constructor(a) {
+    //         super(a);
+    //     }
+    //     ccc() {
+    //         console.log("this is class c");
+    //     }
+    // }
+
+    // class D extends A {
+    //     constructor(a) {
+    //         super(a);
+    //     }
+    //     ddd() {
+    //         console.log("this is class d");
+    //     }
+    // }
+
+    // let base = new D(1);
+    // base.aaa();
+
+
+    class A {
+        constructor(num1) {
+            this.a = num1;
+        }
+        aaa() {
+            console.log("this is class a");
+        }
+    }
+
+    class B extends A {
+        constructor(a) {
+            super(a)
+        }
+        bbb() {
+            console.log("this is class b");
+        }
+    }
+
+    class C extends A {
+        constructor(a) {
+            super(a)
+        }
+        ccc() {
+            console.log("this is class c");
+        }
+    }
+
+    class D extends B {
+        constructor(a) {
+            super(a)
+        }
+        ddd() {
+            console.log("this is class d");
+        }
+    }
+    class D extends C {
+        constructor(a) {
+            super(a)
+        }
+        ddd() {
+            console.log("this is class d");
+        }
+    }
+
+    let base = new D(1);
+    base.ccc();
+
+
+
+
+    </script>
+
+</body>
+</html>
