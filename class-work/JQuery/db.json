@@ -1,0 +1,23 @@
+
+{    
+    "std" : [
+        {
+            "name": "happy",
+            "age" : 25,
+            "marks" : 90
+        },
+        {
+            "name": "krisha",
+            "age" : 20,
+            "marks" : 80
+        },
+        {
+            "name": "rekha",
+            "age" : 45,
+            "marks" : 70
+        }
+    ]
+}
+
+
+

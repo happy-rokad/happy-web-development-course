@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .d {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="a"> a
+        <div class="b"> b
+            <div class="c"> c
+                <p> para 1 </p>
+                <p class="intro"> para 2 </p>
+                <p> para 3 </p>
+                <p> para 4 </p>
+                <p> para 5 </p>
+                <div class="d"> d </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        // Traversal (Anchestor)
+        $(document).ready(function () {
+            // $('.b').parents().css('border', '2px solid red');
+            // $('.b').parent().css('border', '2px solid red');
+            // $('.d').parentsUntil('.a').css('border', '2px solid red');
+
+            // Decsendant
+
+            // $('.a').children().css('border', '2px solid red');
+            // $('.a').find('span').css('border', '2px solid red');
+
+            // Siblings
+
+            // $('.intro').siblings().css('border', '2px solid red');
+            // $('.intro').next().css('border', '2px solid red');
+            // $('.intro').nextAll().css('border', '2px solid red');
+            $('.intro').nextUntil('.d').css('border', '2px solid red');
+
+        })
+
+    </script>
+
+</body>
+
+</html>

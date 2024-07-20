@@ -1,0 +1,780 @@
+@media (min-width:1440px) and (max-width:2560px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .background .black_layer h1,h3,h4{
+        font-size: 40px;
+    }
+    
+    .background .black_layer h3{
+        font-size: 24px;
+    }
+    
+    .background .black_layer h4{
+        font-size: 18px;
+    }
+
+    /* ********************************** */
+
+    .everywhere_container{
+        height: 600px;
+    }
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        width: 90%;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content h1,
+    .everywhere_container .everywhere .content h1,
+    .watch_offline_container .watch_offline .content h1{
+        font-size: 42px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content p,
+    .everywhere_container .everywhere .content p,
+    .watch_offline_container .watch_offline .content p{
+        font-size: 20px;
+    }
+
+    .everywhere_container .everywhere .box .new-box .new-box-video{
+        position: absolute;
+        left: 110px;
+        width: 63%;
+        top: 40px;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    /* #video3{
+        width: 370px;
+        height: 250px;
+        left: 100px;
+        top: 20px;
+    } */
+
+    .watch_offline_container .watch_offline .box img{
+        width: auto;
+        height: 350px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other{
+        width: auto;
+        height: 100px;
+        padding: 10px 0px;
+        margin-top: 180px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image{
+        padding: 0px 10px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image img{
+        height: 100px;
+        width: auto;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0px 10px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text .text-h3{
+        margin: 0px;
+        padding: 0;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text p{
+        margin: 0px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: rgb(43, 117, 255);
+    }
+    
+    /* **************************************************** */
+
+    .questions_container h1{
+        font-size: 36px;
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .background .black_layer h1,h3,h4{
+        font-size: 30px;
+    }
+    
+    .background .black_layer h3{
+        font-size: 20px;
+    }
+    
+    .background .black_layer h4{
+        font-size: 16px;
+    }
+
+    .background .black_layer .email_box input,
+    .questions_container .email_box input{
+        width: 250px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .background .black_layer .email_box button,
+    .questions_container .email_box button{
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    /* ********************************** */
+    
+    .enjoy_tv_container,
+    .everywhere_container,
+    .watch_offline_container{
+        height: 550px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .everywhere_container{
+        height: 600px;
+    }
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        flex-direction: column;
+        width: 100%;
+    }    
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        width: 80%;
+    }
+
+    .enjoy_tv_container .enjoy_tv .content,
+    .everywhere_container .everywhere .content,
+    .watch_offline_container .watch_offline .content{
+        width: 100%;
+        text-align: center;
+    }    
+
+    .watch_offline_container .watch_offline .content{
+        order: 1;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content h1,
+    .everywhere_container .everywhere .content h1,
+    .watch_offline_container .watch_offline .content h1{
+        font-size: 36px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content p,
+    .everywhere_container .everywhere .content p,
+    .watch_offline_container .watch_offline .content p{
+        font-size: 18px;
+    }
+
+    .enjoy_tv_container .enjoy_tv .box,
+    .watch_offline_container .watch_offline .box{
+        width: 70%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .everywhere_container .everywhere .box .new-box .new-box-video{
+        position: absolute;
+        left: 110px;
+        width: 63%;
+        top: 40px;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .watch_offline_container .watch_offline .box{
+        order: 2;
+    }
+
+    .enjoy_tv_container .enjoy_tv .box img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-top: 20px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .box video{
+        left: 50px;
+        width: 80%;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .watch_offline_container .watch_offline .box img{
+        width: auto;
+        height: 320px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other{
+        width: 320px;
+        height: 80px;
+        padding: 10px 0px;
+        margin-top: 200px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image{
+        padding: 0px 10px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image img{
+        height: 80px;
+        width: auto;
+    }
+
+    .watch_offline_container .watch_offline .box .other .icon-img{
+        height: auto;
+        width: 50px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0px 10px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text .text-h3{
+        margin: 0px;
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text p{
+        margin: 0px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: rgb(43, 117, 255);
+    }
+
+
+    /* **************************************************** */
+
+    .questions_container h1{
+        font-size: 28px;
+    }
+
+    .questions_container .square p, #plus-icon{
+        font-size: 20px;
+    }
+
+    .questions_container .square-detail p{
+        font-size: 18px;
+        padding: 0px 40px;
+        line-height: 26px;
+    }
+
+    /* *************************************************** */
+
+    footer .footer-container .footer-content .first-part a, .footer-p,
+    footer .footer-container .footer-content .first-part .buttons{
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 16px;
+    }
+
+    footer .buttons button{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+}
+
+@media (min-width:425px) and (max-width:768px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    nav{
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    nav .logo{
+        width: 120px;
+        height: auto;
+    }
+    
+    nav .buttons button{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    nav .buttons .btn2{
+        font-size: 14px;
+    }
+
+    .background .black_layer h1,h3,h4{
+        font-size: 22px;
+        padding: 0px 10px;
+    }
+    
+    .background .black_layer h3{
+        font-size: 16px;
+    }
+    
+    .background .black_layer h4{
+        font-size: 14px;
+    }
+
+    .background .black_layer .email_box input,
+    .questions_container .email_box input{
+        width: 200px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .background .black_layer .email_box button,
+    .questions_container .email_box button{
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    /* ********************************** */
+    
+    .enjoy_tv_container,
+    .everywhere_container,
+    .watch_offline_container{
+        height: 500px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }    
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        width: 80%;
+    }
+
+    .enjoy_tv_container .enjoy_tv .content,
+    .everywhere_container .everywhere .content,
+    .watch_offline_container .watch_offline .content{
+        width: 100%;
+        text-align: center;
+    }    
+
+    .watch_offline_container .watch_offline .content{
+        order: 1;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content h1,
+    .everywhere_container .everywhere .content h1,
+    .watch_offline_container .watch_offline .content h1{
+        font-size: 28px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content p,
+    .everywhere_container .everywhere .content p,
+    .watch_offline_container .watch_offline .content p{
+        font-size: 14px;
+    }
+
+    .everywhere_container .everywhere .box .new-box .new-box-video{
+        position: absolute;
+        left: 110px;
+        width: 63%;
+        top: 40px;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .enjoy_tv_container .enjoy_tv .box,
+    .watch_offline_container .watch_offline .box{
+        width: 80%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .watch_offline_container .watch_offline .box{
+        order: 2;
+    }
+
+    .enjoy_tv_container .enjoy_tv .box img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-top: 20px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .box video{
+        top: 0;
+        left: 30px;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .watch_offline_container .watch_offline .box img{
+        width: auto;
+        height: 300px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other{
+        width: 280px;
+        height: 70px;
+        padding: 10px 0px;
+        margin-top: 160px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image{
+        padding: 0px 5px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image img{
+        height: 70px;
+        width: auto;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0px 10px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text .text-h3{
+        margin: 0px;
+        padding: 0;
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text p{
+        margin: 0px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: rgb(43, 117, 255);
+    }
+
+    /* **************************************************** */
+
+    .questions_container h1{
+        font-size: 24px;
+    }
+
+    .questions_container .square p, #plus-icon{
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    .questions_container .square-detail p{
+        font-size: 16px;
+        padding: 0px 20px;
+        line-height: 24px;
+    }
+
+    /* *************************************************** */
+
+    footer .footer-container {
+        width: 80%;
+    }
+
+    footer .footer-container .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    footer .footer-container .footer-content .first-part a, 
+    .second-part a, .third-part a, .forth-part a,  .footer-p,
+    footer .footer-container .footer-content .first-part .buttons{
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    footer .buttons button{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 550px) {
+    .everywhere_container .everywhere .box .new-box .new-box-video{
+        position: absolute;
+        left: 60px;
+        width: 63%;
+        top: 20px;
+        z-index: -1;
+        overflow: hidden;
+    }
+}
+
+
+@media (min-width:200px) and (max-width:425px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    nav{
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    nav .logo{
+        width: 100px;
+        height: auto;
+    }
+    
+    nav .buttons button{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    nav .buttons .btn2{
+        font-size: 12px;
+    }
+
+    .background .black_layer h1,h3,h4{
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+    
+    .background .black_layer h3{
+        font-size: 14px;
+    }
+    
+    .background .black_layer h4{
+        font-size: 12px;
+    }
+
+    .background .black_layer .email_box input,
+    .questions_container .email_box input{
+        width: 150px;
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    .background .black_layer .email_box button,
+    .questions_container .email_box button{
+        border: none;
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    /* ********************************** */
+    
+    .enjoy_tv_container,
+    .everywhere_container,
+    .watch_offline_container{
+        height: 400px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }    
+
+    .enjoy_tv_container .enjoy_tv,
+    .everywhere_container .everywhere,
+    .watch_offline_container .watch_offline{
+        width: 80%;
+    }
+
+    .enjoy_tv_container .enjoy_tv .content,
+    .everywhere_container .everywhere .content,
+    .watch_offline_container .watch_offline .content{
+        width: 100%;
+        text-align: center;
+    }    
+
+    .watch_offline_container .watch_offline .content{
+        order: 1;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content h1,
+    .everywhere_container .everywhere .content h1,
+    .watch_offline_container .watch_offline .content h1{
+        font-size: 24px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .content p,
+    .everywhere_container .everywhere .content p,
+    .watch_offline_container .watch_offline .content p{
+        font-size: 12px;
+    }
+
+    .everywhere_container .everywhere .box .new-box .new-box-video{
+        position: absolute;
+        left: 60px;
+        width: 63%;
+        top: 20px;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .enjoy_tv_container .enjoy_tv .box,
+    .watch_offline_container .watch_offline .box{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .watch_offline_container .watch_offline .box{
+        order: 2;
+    }
+
+    .enjoy_tv_container .enjoy_tv .box img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-top: 20px;
+    }
+    
+    .enjoy_tv_container .enjoy_tv .box video{
+        top: 0;
+        left: 20px;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .watch_offline_container .watch_offline .box img{
+        width: auto;
+        height: 250px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other{
+        width: 230px;
+        height: 70px;
+        padding: 10px 0px;
+        margin-top: 130px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image{
+        padding: 0px 5px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .image img{
+        height: 60px;
+        width: auto;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0px 10px;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text .text-h3{
+        margin: 0px;
+        padding: 0;
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .watch_offline_container .watch_offline .box .other .text p{
+        margin: 0px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: rgb(43, 117, 255);
+    }
+
+
+    /* **************************************************** */
+
+    .questions_container h1{
+        font-size: 24px;
+    }
+
+    .questions_container .square p, #plus-icon{
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    .questions_container .square-detail p{
+        font-size: 14px;
+        padding: 0px 20px;
+        line-height: 24px;
+    }
+
+    /* *************************************************** */
+
+    footer .footer-container {
+        width: 80%;
+    }
+
+    footer .footer-container .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    footer .footer-container .footer-content .second-part, 
+    footer .footer-container .footer-content .third-part, 
+    footer .footer-container .footer-content .forth-part{
+        margin-top: 20px;
+    }
+
+    footer .footer-container .footer-content .first-part a, 
+    .second-part a, .third-part a, .forth-part a,  .footer-p,
+    footer .footer-container .footer-content .first-part .buttons{
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    footer .buttons button{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+}
