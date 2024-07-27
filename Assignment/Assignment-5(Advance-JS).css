@@ -1,0 +1,719 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* prac 1 : Calculate subtotal price of quantity  */
+
+.prac1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.prac1 table{
+    font-size: 16px;
+    border-collapse: collapse;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+.prac1 table tr, th, td{
+    padding: 10px;
+}
+
+.prac1 table .center{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.prac1 table td img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.prac1 table td input{
+    font-size: 16px;
+    width: auto;
+    height: 30px;
+    background-color: transparent;
+}
+
+#result1, #result2, #finalresult{
+    border: none;
+}
+
+.prac1 table td button{
+    width: auto;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(224, 0, 0);
+    border-radius: 4px;
+} 
+
+
+/* prac 2 : form validation new file */
+
+
+/* Drag & Drop to another container */
+
+.prac3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac3 .container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.prac3 .container .box {
+    background-color: #0089e4;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: move;
+    width: 100px;
+}
+
+
+/* Email Validation */
+
+.prac4{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac4 .email_box{
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(233, 233, 233, 0.8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.prac4 .email_box input{
+    border: none;
+    padding: 10px;
+    background-color: transparent !important;
+}
+
+.prac4 .email_box input:focus{
+    outline: none;
+    padding: 10px;
+    background-color: transparent !important;
+}
+
+.prac4 .email_box img{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}
+
+
+/* prac 5 : Password Strength Check */
+
+.prac5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac5 .container{
+    border: 1px solid lightgray;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px lightgrey;
+    border-radius: 6px;
+    width: 300px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac5.heading{
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.prac5 .container .pwd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac5 .container .pwd button{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+    margin-left: 3px;
+}
+
+.prac5 input{
+    height: 30px;
+    width: 250px;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+}
+
+.prac5 .container .lines{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.prac5 .container .lines #line1, #line2, #line3{
+    background-color: lightgray;
+    height: 10px;
+    width: 95px;
+    border-radius: 50px;
+}
+
+.prac5 .container .lines .strength-week, .strength-medium, .strength-strong{
+    background-color: rgb(0, 80, 0);
+}
+
+.prac5 .container .lines .strength-week, .strength-medium{
+    background-color: rgb(255, 136, 0);
+}
+
+.prac5 .container .lines .strength-week{
+    background-color: rgb(204, 0, 0);
+}
+
+
+/* prac 6 : Random quote show */
+
+.prac6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac6 .quote_box{
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px rgb(240, 240, 240);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prac6 .quote_box .box{
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.prac6 .quote_box .line{
+    width: 80%;
+    height: 2px;
+    background-color: lightgray;
+}
+
+.prac6 .quote_box .btn_icon{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.prac6 .quote_box .btn_icon .icons, .round{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.prac6 .quote_box .btn_icon .round{
+    border: 1px solid rgb(0, 152, 223);
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.prac6 .quote_box .btn_icon .round i{
+    color: rgb(0, 152, 223);
+    font-size: 12px;
+}
+
+.prac6 .quote_box .btn_icon .btn button{
+    background-color: rgb(0, 152, 223);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+}
+
+
+/* prac 7 : Export HTML table to Excel */
+
+.prac7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac7 table{
+    border-collapse: collapse;
+}
+
+.prac7 table tr, th, td{
+    padding: 5px 20px;
+    text-align: left;
+}
+
+.prac7 button{
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    background-color: rgba(235, 235, 235, 0.274);
+    height: 30px;
+    width: 150px;
+    border-radius: 6px;
+}
+
+
+/* prac 8 : Currency Convert  */
+
+.prac8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac8 form{
+    width: 250px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px lightgray;
+}
+
+.prac8 form input{
+    width: 242px;
+}
+
+.prac8 form input,
+.prac8 form .from-to select{
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.prac8 form .from-to, .converter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.prac8 form .from , .to{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.prac8 form .from-to select {
+    padding: 5px;
+    height: auto;
+    width: auto;
+}
+
+.prac8 form .icon i{
+    margin-top: 22px;
+}
+
+.prac8 form .converter{
+    margin-top: 0px;
+}
+
+.prac8 form .converter i{
+    font-size: 14px;
+}
+
+.prac8 form .converter .convertershow{
+    width:100%;
+    margin-top: 10px;
+    border: none;
+    text-align: center;
+}
+
+.prac8 form button{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgb(0, 125, 228);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* prac 9 : Delay Function using Debouncing */
+
+
+
+/* prac 10 : Mouse over display mouse cordinates  */
+
+.prac10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac10 #container{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* prac 11 : Build alarm clock */
+
+.prac11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.prac11 .clock_box{
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.445);
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prac11 .clock_box .timing{
+    font-size: 20px;
+}
+ 
+.prac11 .clock_box .disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.prac11 .clock_box img{
+    width: 100%;
+    height: 100px;
+}
+
+.prac11 .clock_box .box_column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.prac11 .clock_box .box_column select{
+    width: 80px;
+    height: 30px;
+}
+
+.prac11 .clock_box button{
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(0, 112, 187);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* prac 12 : Light Box Gallary */
+
+.prac12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac12 .gallaryBox{
+    width: 610px;
+    height: 400px;
+    border: 2px solid black;
+    padding: 5px;
+    padding-bottom: 8px;
+    background-size: auto;
+}
+
+.prac12 .gallaryBox .example-image-link{
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px;
+}
+
+.prac12 .gallaryBox .example-image{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+/* prac 13 : card slider */
+
+.prac13{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.prac13 .cardBox{
+    background-color: white;
+    width: auto;
+    box-shadow: 0px 0px 20px 0px rgba(236, 236, 236, 0.651);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.prac13 .cardBox .btn-prev i, .btn-next i{
+    font-size: 30px;
+    color: rgb(0, 143, 209);
+    padding: 10px;
+}
+
+.prac13 .cardBox .card{
+    width: 200px;
+    height: auto;
+    background-color: rgb(0, 143, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+.prac13 .cardBox .card .roundImg{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac13 .cardBox .card .roundImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 2px solid white;
+    padding: 3px;
+}
+
+.prac13 .cardBox .card .contain{
+    background-color: white;
+    height: auto;
+    padding: 20px 10px;
+    border-radius: 0px 0px 9px 9px;
+}
+
+.prac13 .cardBox .card .contain h4{
+    margin: 0;
+    padding: 0;
+}
+
+.prac13 .cardBox .card .contain p{
+    font-size: 14px;
+}
+
+.prac13 .cardBox .card .contain button{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgb(0, 143, 209);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* prac 14 : Login logout system */
+
+.prac14{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prac14 .loginBox, .logoutBox{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0px rgb(233, 233, 233);
+    padding: 20px;
+    border-radius: 6px;
+    width: 200px;
+}
+
+.prac14 form .username, .password, .login-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.prac14 form input{
+    margin-top: 5px;
+    height: 20px;
+}
+
+.prac14 .loginBox .login-btn .button,
+.prac14 .logoutBox .logout-btn button{
+    background-color: rgb(14, 87, 0);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.prac14 .logoutBox .logout-btn button{
+    background-color: rgb(214, 0, 0);
+}
+
+.prac14 span{
+    color: red;
+    font-size: 12px;
+}
+
+
+
+/* prac 15 : Image apply filters */
+
+
+.prac15{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.prac15 .filterBox .filters{
+    width: 90%;
+    height: auto;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.prac15 .filterBox .filters h4{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.prac15 .filterBox .filters .head{
+    margin-top: 20px;
+}
+
+.prac15 .filterBox .filters label{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.prac15 .filterBox .filters .span{
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: red;
+}
+
+.prac15 .filterBox .filters .rotateFlip button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.prac15 .filterBox .filters .rotateFlip button i{
+    font-size: 16px;
+}
+
+.prac15 .filterBox button,
+.prac15 .imageBox button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.prac15 .imageBox .img{
+    width: 400px;
+    height: 308px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+
+
+/* prac 16 : CRUD with local storage in new file */
+

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS Assignment</title>
+    <link rel="stylesheet" href="Assignment-5(Advance-JS).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- prac 12 : Light Box Gallary css link -->
+    <link rel="stylesheet" href="../Assignment/lightbox2-2.11.4/dist/css/lightbox.min.css">
+</head>
+
+<body>
+
+
+    <!-- prac 1: Calculate subtotal price of quantity -->
+
+    <h1> Calculate subtotal price of quantity show </h1>
+    <div class="prac1">
+        <table border="1">
+            <tr>
+                <th> Product Info </th>
+                <th> Quantity </th>
+                <th> Price (per unit) </th>
+                <th> Price (subtotal) </th>
+                <th> </th>
+            </tr>
+            <tr id="removedata1">
+                <td class="center"> <img src="../Assignment/images/window-hardware-clip.jpg" alt="window-clip">
+                    Fortunata Window
+                    Hardware -
+                    Decorative Holdbacks - Mocha </td>
+                <td> <input type="text" id="quantity_num1" onkeyup="myfun()"> </td>
+                <td> $29.99 </td>
+                <td> <input id="result1"> </td>
+                <td> <button id="removeData1"> Remove </button> </td>
+            </tr>
+            <tr id="removedata2">
+                <td class="center"> <img src="../Assignment/images/window-hardware-ring.webp" alt="window-ring"> Woven
+                    Trellis
+                    Window Hardware - Clip Rings - Bronze </td>
+                <td> <input type="text" id="quantity_num2" onkeyup="myfun()"> </td>
+                <td> $12.99 </td>
+                <td> <input id="result2"> </td>
+                <td> <button id="removeData2"> Remove </button> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> <input id="finalresult"> </td>
+                <td> </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- prac 2 : form validation new file -->
+
+
+
+    <!-- prac 3 : Drag & Drop to another container -->
+
+    <h1> Drag & Drop to another container </h1>
+
+    <div class="prac3">
+        <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="box" id="box1" draggable="true" ondragstart="drag(event)">Drag me 1</div>
+            <div class="box" id="box2" draggable="true" ondragstart="drag(event)">Drag me 2</div>
+            <div class="box" id="box3" draggable="true" ondragstart="drag(event)">Drag me 3</div>
+        </div>
+
+        <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    </div>
+
+
+    <!-- prac 4 : Email Validation -->
+
+    <h1> Email Validation </h1>
+    <div class="prac4">
+        <div class="email_box">
+            <input type="text" id="email" placeholder="Enter Your Email">
+            <img src="../Assignment/images/email-icon.png" id="validation-icon" alt="email-icon">
+        </div>
+    </div>
+
+
+    <!-- prac 5 : Password strength check -->
+
+    <h1> Password Strength Check </h1>
+
+    <div class="prac5">
+        <div class="container">
+            <h3 class="heading"> Pasword Strength Indicator in HTML CSS & JavaScript <h3>
+                    <div class="pwd">
+                        <input type="password" id="password" oninput="checkPasswordStrength()">
+                        <button type="button" onclick="togglePassword()" class="toggleIcon"> <i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                    <div class="lines" id="password-strength">
+                        <div class="strength-line strength-week" id="line1"></div>
+                        <div class="strength-line strength-medium" id="line2"></div>
+                        <div class="strength-line strength-strong" id="line3"></div>
+                    </div>
+        </div>
+    </div>
+
+
+    <!-- prac 6 : Random Quote Show -->
+
+    <h1> Random Quote Show </h1>
+
+    <div class="prac6">
+        <div class="quote_box">
+            <h4> Quote of the Day </h4>
+            <div class="box" id="randomquote"> "You must be the change you wish to see in the world. -Mahatma Gandhi"
+            </div>
+            <div class="line"></div>
+            <div class="btn_icon">
+                <div class="icons">
+                    <div class="round">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="round">
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+                    <div class="round">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button onclick="generateRandomQuote()"> New Quote </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- prac 7 : Export HTML table to Excel -->
+
+    <h1> Export HTML table to Excel </h1>
+    <div class="prac7">
+        <table id="myTable" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>35</td>
+                <td>Canada</td>
+            </tr>
+        </table>
+        <button onclick="tableToExcel()">Export to Excel</button>
+    </div>
+
+
+    <!-- prac 8 : Currency Convert -->
+
+    <h1> Currency Convert </h1>
+
+    <div class="prac8">
+        <form>
+            <label for="amount"> Enter Amount </label>
+            <input type="text" id="number" onkeyup="enterNumber()">
+            <div class="from-to">
+                <div class="from">
+                    <label for="from"> From </label>
+                    <select name="contry" id="from">
+                        <option value="USD"> USD </option>
+                        <option value="INR"> INR </option>
+                        <option value="EUR"> EUR </option>
+                    </select>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="to">
+                    <label for="to"> To </label>
+                    <select name="contry" id="to">
+                        <option value="INR"> INR </option>
+                        <option value="USD"> USD </option>
+                        <option value="EUR"> EUR </option>
+                    </select>
+                </div>
+            </div>
+            <br>
+
+            <button onclick="exchangeRate(event)"> Get Exchange Rate </button>
+            <div class="converter">
+                <div class="convertershow" id="result"></div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- prac 9 : Delay Function using Debouncing -->
+
+    <!-- prac 10 : Mouse over display mouse cordinates -->
+
+    <h1> Mouse over display mouse cordinates </h1>
+
+    <div class="prac10">
+        <div id="container">
+            <div id="mouseCordinate"> Mouse hover area </div>
+        </div>
+    </div>
+
+
+    <!-- prac 11 : Build Alarm Clock -->
+
+    <h1> Build Alarm Clock </h1>
+
+    <div class="prac11">
+        <div class="clock_box">
+            <img src="../Assignment/images/alarmClock.svg" alt="clock">
+            <h3 class="timing"> 00:00:00 PM </h3>
+            <div class="box_column">
+                <select name="clock" id="selectClock">
+                    <option value="hours" selected hidden> Hours </option>
+                </select>
+                <select name="clock" id="selectClock">
+                    <option value="minutes" selected hidden> Minute </option>
+                </select>
+                <select name="clock" id="selectClock">
+                    <option value="am/pm" selected hidden> AM/PM </option>
+                </select>
+            </div>
+            <button id="clockButton"> Set Alarm </button>
+        </div>
+    </div>
+
+
+    <!-- prac 12 : Light Box Gallary -->
+
+    <h1> Light Box Gallary </h1>
+
+    <div class="prac12">
+        <div class="gallaryBox">
+            <a class="example-image-link" href="../Assignment/images/lightBox1.avif" data-lightbox="example-set">
+                <img class="example-image" src="../Assignment/images/lightBox1.avif" alt="img1" /></a>
+
+            <a class="example-image-link" href="../Assignment/images/lightBox2.avif" data-lightbox="example-set">
+                <img class="example-image" src="../Assignment/images/lightBox2.avif" alt="img2" /></a>
+
+            <a class="example-image-link" href="../Assignment/images/lightBox3.avif" data-lightbox="example-set">
+                <img class="example-image" src="../Assignment/images/lightBox3.avif" alt="img3" /></a>
+
+            <a class="example-image-link" href="../Assignment/images/lightBox4.avif" data-lightbox="example-set">
+                <img class="example-image" src="../Assignment/images/lightBox4.avif" alt="img4" /></a>
+
+            <a class="example-image-link" href="../Assignment/images/lightBox5.avif" data-lightbox="example-set">
+                <img class="example-image" src="../Assignment/images/lightBox5.avif" alt="img3" /></a>
+
+            <a class="example-image-link" href="../Assignment/images/lightBox6.avif" data-lightbox="example-set">
+                <img class="example-image" src="../Assignment/images/lightBox6.avif" alt="img4" /></a>
+        </div>
+    </div>
+
+
+    <!-- prac 13 : card Slider -->
+
+    <h1> Card Slider Responsive </h1>
+
+    <div class="prac13">
+        <div class="cardBox">
+
+            <div class="btn-prev" onclick="prevSlide()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <div class="card">
+                <div class="roundImg">
+                    <img src="../Assignment/images/card-img1.webp" alt="cardimg1">
+                </div>
+                <div class="contain">
+                    <h4> David Dell </h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consectetur.</p>
+                    <button> View More </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="roundImg">
+                    <img src="../Assignment/images/card-img2.jpeg" alt="cardimg2">
+                </div>
+                <div class="contain">
+                    <h4> Rose Bush </h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consectetur.</p>
+                    <button> View More </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="roundImg">
+                    <img src="../Assignment/images/card-img3.avif" alt="cardimg3">
+                </div>
+                <div class="contain">
+                    <h4> Jones Gail </h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consectetur.</p>
+                    <button> View More </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="roundImg">
+                    <img src="../Assignment/images/card-img4.jpg" alt="cardimg4">
+                </div>
+                <div class="contain">
+                    <h4> David Dell </h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consectetur.</p>
+                    <button> View More </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="roundImg">
+                    <img src="../Assignment/images/card-img5.avif" alt="cardimg5">
+                </div>
+                <div class=" contain">
+                    <h4> Rose Bush </h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consectetur.</p>
+                    <button> View More </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="roundImg">
+                    <img src="../Assignment/images/card-img6.jpg" alt="cardimg6">
+                </div>
+                <div class="contain">
+                    <h4> Jones Gail </h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consectetur.</p>
+                    <button> View More </button>
+                </div>
+            </div>
+
+            <div class="btn-next" onclick="nextSlide()">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- prac 14 : Login logout system -->
+
+    <h1> Login Logout System </h1>
+
+    <div class="prac14">
+        <div class="loginBox" id="loginBox">
+            <h2> Login </h2>
+            <form>
+                <div class="username">
+                    <label for="username"> Username </label>
+                    <input type="text" placeholder="Enter your username" id="usernameLogin" autocomplete="off">
+                    <span id="usernameError"></span>
+                </div>
+                <div class="password">
+                    <label for="password"> Password </label>
+                    <input type="password" placeholder="Enter your password" id="passwordLogin" autocomplete="off">
+                    <span id="passwordError"></span>
+                </div>
+                <div class="login-btn">
+                    <input type="submit" value="Login" class="button">
+                </div>
+            </form>
+        </div>
+
+        <div class="logoutBox" id="logoutBox" style="display: none;">
+            <h2> Welcome </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos quisquam ducimus ut nobis? Obcaecati
+                error explicabo ipsum reprehenderit nulla. </p>
+            <div class="logout-btn">
+                <button onclick="return logout()"> Logout </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- prac 15 : Image apply filters -->
+
+    <!-- <h1> Image apply Fliters </h1>
+
+    <div class="prac15">
+        <div class="filterBox">
+            <div class="filters">
+                <h4> Filter </h4>
+                <label for="brightness"> Brightness </label>
+                <input type="range" id="brightness" class="span" min="0" max="2" step="0.01" value="1">
+                <label for="saturation"> Saturation </label>
+                <input type="range" id="saturation" class="span" min="0" max="2" step="0.01" value="1">
+                <label for="grayscale"> Grayscale </label>
+                <input type="range" id="grayscale" class="span" min="0" max="2" step="0.01" value="1">
+
+                <h4 class="head"> Rotate & Flip </h4>
+                <div class="rotateFlip">
+                    <button id="rotate-left"> <i class="fa-solid fa-rotate-left"></i> </button>
+                    <button id="rotate-right"> <i class="fa-solid fa-rotate-right"></i> </button>
+                    <button id="flip-vertical"> <i class="fa-solid fa-arrows-up-down"></i> </button>
+                    <button id="flip-horizontal"> <i class="fa-solid fa-arrows-left-right"></i> </button>
+                </div>
+            </div>
+            <button id="resetData"> Reset Filter </button>
+        </div>
+        <div class="imageBox">
+            <div class="img">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <input type="file" id="upload" style="display: none;">
+            <button id="uploadImg"> Choose Image </button>
+            <button id="save"> Save Image </button>
+        </div>
+    </div> -->
+
+
+    <!-- prac 16 : CRUD with Localstorage in new file  -->
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <script>
+
+        //  prac 1: Calculate subtotal price of quantity
+
+        function myfun(event) {
+
+            var quantity1 = parseInt(document.getElementById('quantity_num1').value);
+            var quantity2 = parseInt(document.getElementById('quantity_num2').value);
+            var price1 = 29.99;
+            var result1 = quantity1 * price1;
+
+            var price2 = 12.99;
+            var result2 = quantity2 * price2;
+
+            var finalResult = result1 + result2;
+
+
+            document.getElementById('result1').value = '$' + result1;
+            document.getElementById('result2').value = '$' + result2;
+            document.getElementById('finalresult').value = '$' + finalResult;
+            $(document).ready(function () {
+                $('#removeData1').click(function () {
+                    $('#removedata1').remove();
+                    document.getElementById('finalresult').value = '$' + result2;
+                });
+            });
+            $(document).ready(function () {
+                $('#removeData2').click(function () {
+                    $('#removedata2').remove();
+                    document.getElementById('finalresult').value = '$' + result1;
+                });
+            });
+        }
+
+
+
+        // *****************************************************************************************
+        // prac 2 : form validation new file
+
+
+        // *****************************************************************************************
+        // prac 3 : Drag & Drop to another container
+
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var draggedElement = document.getElementById(data);
+            event.target.appendChild(draggedElement);
+        }
+
+
+        // *****************************************************************************************
+        // Prac 4 : Email Validation
+
+        const emailInput = document.getElementById('email');
+        const validationIcon = document.getElementById('validation-icon');
+
+        emailInput.addEventListener('input', function () {
+            const email = emailInput.value.trim();
+            if (isRightEmail(email)) {
+                validationIcon.src = '../Assignment/images/email-true.png';
+            } else {
+                validationIcon.src = '../Assignment/images/email-red.jpeg';
+            }
+        });
+
+        function isRightEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+
+        // *****************************************************************************************
+        // prac 5 : Password Strength Check
+
+        function checkPasswordStrength() {
+            var password = document.getElementById('password').value;
+            var strengthLine = document.querySelectorAll('.strength-line');
+
+            for (let i = 0; i < strengthLine.length; i++) {
+                strengthLine[i].style.backgroundColor = 'lightgray';
+            }
+
+            var strength = 0;
+
+            if (password.length >= 6) {
+                strength++;
+            }
+
+            if (password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/\d+/)) {
+                strength++;
+            }
+
+            if (password.match(/[!@#$%^&*()\-_=+{};:,<.>]/)) {
+                strength++;
+            }
+
+            switch (strength) {
+                case 1:
+                    document.getElementById('line1').style.backgroundColor = 'rgb(204, 0, 0)';
+                    break;
+                case 2:
+                    document.getElementById('line1').style.backgroundColor = 'rgb(255, 136, 0)';
+                    document.getElementById('line2').style.backgroundColor = 'rgb(255, 136, 0)';
+                    break;
+                case 3:
+                    document.getElementById('line1').style.backgroundColor = 'rgb(0, 80, 0)';
+                    document.getElementById('line2').style.backgroundColor = 'rgb(0, 80, 0)';
+                    document.getElementById('line3').style.backgroundColor = 'rgb(0, 80, 0)';
+                    break;
+
+                default:
+                    document.getElementById('line1').style.backgroundColor = 'lightgray';
+                    document.getElementById('line2').style.backgroundColor = 'lightgray';
+                    document.getElementById('line3').style.backgroundColor = 'lightgray';
+
+                    break;
+            }
+
+        }
+
+        function togglePassword(passwordEnter) {
+            var passwordEnter = document.getElementById('password');
+            if (passwordEnter.type === 'password') {
+                passwordEnter.type = 'text';
+            } else {
+                passwordEnter.type = 'password';
+            }
+        }
+
+
+
+        // *****************************************************************************************
+        // prac 6 : Random quote show
+
+
+        const quotes = [
+            '"The only way to do great work is to love what you do. - Steve Jobs"',
+            '"Innovation distinguishes between a leader and a follower. - Steve Jobs"',
+            '"Your time is limited, so don’t waste it living someone else’s life. - Steve Jobs"',
+            '"Don’t let the noise of others’ opinions drown out your own inner voice. - Steve Jobs"',
+            '"Design is not just what it looks like and feels like. Design is how it works. - Steve Jobs"',
+            '"The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela"',
+            '"The way to get started is to quit talking and begin doing. -Walt Disney"',
+            '"The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt"',
+            '"Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa"'
+        ];
+
+        function generateRandomQuote() {
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('randomquote').innerHTML = quotes[randomIndex];
+        }
+
+
+        // *****************************************************************************************
+        // prac 7 : Export HTML table to Excel
+
+        function tableToExcel() {
+            var table = document.getElementById('myTable');
+            var exportTable = table.outerHTML;
+            window.open('data:application/vnd.ms-excel,' + encodeURI(exportTable));
+        }
+
+
+        // *****************************************************************************************
+        // prac 8 : Currency Convert
+
+
+        function enterNumber() {
+            var addNumber = parseFloat(document.getElementById('number').value);
+            document.getElementById('usdNumber').value = addNumber + '  ' + 'USD';
+        }
+
+        function exchangeRate(event) {
+            event.preventDefault();
+
+            const addNumber = document.getElementById('number').value;
+            const fromCurrency = document.getElementById('from').value;
+            const toCurrency = document.getElementById('to').value;
+
+            var exchangeRate = {
+                'USD': {
+                    'INR': 83.70,
+                    'EUR': 0.92
+                },
+                'INR': {
+                    'USD': 0.012,
+                    'EUR': 0.011
+                },
+                'EUR': {
+                    'INR': 90.85,
+                    'USD': 1.09
+                }
+            }
+
+            const rate = exchangeRate[fromCurrency][toCurrency];
+            const result = (addNumber * rate).toFixed(2);
+
+            document.getElementById('result').innerText = ` ${addNumber} ${fromCurrency} = ${result} ${toCurrency}`;
+        }
+
+
+        // *****************************************************************************************
+        // prac 9 : Delay Function using Debouncing
+
+
+
+        // *****************************************************************************************
+        // prac 10 : Mouse over display mouse cordinates
+
+        function updateCordinate(event) {
+            const mouseCordinate = document.getElementById('mouseCordinate');
+            mouseCordinate.textContent = ` Mouse Cordinate : (${event.clientX}, ${event.clientY}) `;
+        }
+        const container = document.getElementById('container');
+        container.addEventListener('mouseover', updateCordinate);
+
+
+        // *****************************************************************************************
+        // prac 11 : Build alarm clock
+
+        const currentTime = document.querySelector('.timing');
+        const boxColumn = document.querySelector('.box_column');
+        selectMenu = document.querySelectorAll('#selectClock');
+        setAlarmBtn = document.querySelector('#clockButton');
+
+        let alarmTime, isAlarmSet;
+        ringtone = new Audio("../Assignment/images/alarm.mp3");
+
+        // console.log(selectMenu);
+
+        for (let i = 12; i > 0; i--) {
+            i = i < 10 ? "0" + i : i; // add ahead 0 for 1 to 9 number
+            let option = `<option value="${i}"> ${i} </option>`;
+            selectMenu[0].firstElementChild.insertAdjacentHTML("afterend", option);
+        }
+
+        for (let i = 59; i >= 0; i--) {
+            i = i < 10 ? "0" + i : i; // add ahead 0 for 1 to 9 number
+            let option = `<option value="${i}"> ${i} </option>`;
+            selectMenu[1].firstElementChild.insertAdjacentHTML("afterend", option);
+        }
+
+        for (let i = 2; i > 0; i--) {
+            let ampm = i == 1 ? "AM" : "PM";
+            let option = `<option value="${ampm}"> ${ampm} </option>`;
+            selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
+        }
+
+        setInterval(() => {
+            let date = new Date();
+            h = date.getHours();
+            m = date.getMinutes();
+            s = date.getSeconds();
+            ampm = "AM";
+
+            if (h >= 12) {
+                h = h - 12;
+                ampm = "PM";
+            }
+
+            h = h == 0 ? h = 12 : h;
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+            currentTime.innerText = `${h}:${m}:${s} ${ampm}`;
+
+            if (alarmTime === `${h}:${m} ${ampm}`) {
+                ringtone.play();
+                ringtone.loop = true;
+            }
+
+        }, 1000);
+
+        function setAlarm() {
+            if (isAlarmSet) {
+                alarmTime = "";
+                ringtone.pause();
+                boxColumn.classList.remove("disable");
+                setAlarmBtn.innerText = "Set Alarm";
+                return isAlarmSet = false;
+            }
+
+            let time = `${selectMenu[0].value}:${selectMenu[1].value} ${selectMenu[2].value}`;
+
+            if (time.includes("hours") || time.includes("minutes") || time.includes("am/pm")) {
+                alert("please, select a valid time to set Alarm!");
+            }
+            alarmTime = time;
+            isAlarmSet = true;
+            boxColumn.classList.add("disable");
+            setAlarmBtn.innerText = "Clear Alarm";
+        }
+
+        setAlarmBtn.addEventListener("click", setAlarm);
+
+
+
+        // *****************************************************************************************
+        // prac 12 : Light Box Gallary(script link in below at this script)
+
+
+        // *****************************************************************************************
+        // prac 13 : Card Slider
+
+
+        currentIndex = 0;
+        const slide = document.querySelectorAll('.cardBox .card');
+        const totalSlide = slide.length;
+
+        function showSlide(index) {
+            slide.forEach((slides, i) => {
+                if (i === index) {
+                    slides.style.display = 'block';
+                } else {
+                    slides.style.display = 'none';
+                }
+            })
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlide;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlide) % totalSlide;
+            showSlide(currentIndex);
+        }
+
+        showSlide(currentIndex);
+
+
+        // *****************************************************************************************
+        // prac 14 : Login Logout System
+
+
+        document.getElementById('loginBox').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById('usernameLogin').value;
+            const password = document.getElementById('passwordLogin').value;
+
+            if (username.length < 3 || username.length >= 20) {
+                document.getElementById('usernameError').innerText = "Invalid username";
+                return false;
+            }
+
+            var passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+            if (!passwordRegex.test(password)) {
+                document.getElementById('passwordError').innerText = "Invalid Password";
+                return false;
+            }
+
+            if (username && password) {
+                document.getElementById('loginBox').style.display = 'none';
+                document.getElementById('logoutBox').style.display = 'block';
+                document.getElementById('usernameLogin').value = '';
+                document.getElementById('passwordLogin').value = '';
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+
+        });
+
+        document.getElementById('logoutBox').addEventListener('click', function () {
+            document.getElementById('logoutBox').style.display = 'none';
+            document.getElementById('loginBox').style.display = 'block';
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        });
+
+
+
+        // *****************************************************************************************
+        // prac 15 : Image apply filters
+
+
+        const uploadInput = document.getElementById('upload');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const brightnessInput = document.getElementById('brightness');
+        const saturationInput = document.getElementById('saturation');
+        const grayscaleInput = document.getElementById('grayscale');
+        const saveButton = document.getElementById('save');
+        const verticalFlip = document.getElementById('flip-vertical');
+        const horizontalFlip = document.getElementById('flip-horizontal');
+        const leftRotate = document.getElementById('rotate-left');
+        const rightRotate = document.getElementById('rotate-right');
+        const resetFilter = document.getElementById('resetData');
+
+        let originalImageData = null;
+
+        $(document).ready(function () {
+            $('#uploadImg').click(function () {
+                $('#upload').click().addClass('img');
+            })
+        });
+
+        let img = new Image();
+
+        uploadInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = new Image();
+                    img.onload = function () {
+                        canvas.width = 400;
+                        canvas.height = 308;
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.drawImage(img, 0, 0);
+
+                        originalImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                        applyFilters();
+                    }
+                    img.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+
+        function applyFilters() {
+            const brightness = parseFloat(brightnessInput.value);
+            const saturation = parseFloat(saturationInput.value);
+            const grayscale = parseFloat(grayscaleInput.value);
+
+
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            const data = imageData.data;
+
+            for (let i = 0; i < data.length; i += 4) {
+
+                // Apply brightness
+                data[i] = data[i] * brightness;       // Red
+                data[i + 1] = data[i + 1] * brightness; // Green
+                data[i + 2] = data[i + 2] * brightness; // Blue
+
+                // Apply saturation
+                const gray = (data[i] + data[i + 1] + data[i + 2]) / 3;
+                data[i] = gray + (data[i] - gray) * saturation;  // red
+                data[i + 1] = gray + (data[i + 1] - gray) * saturation;  // green
+                data[i + 2] = gray + (data[i + 2] - gray) * saturation;  // blue
+
+                // Apply grayscale
+                const avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
+                data[i] = avg * (1 - grayscale) + data[i] * grayscale;      // Red
+                data[i + 1] = avg * (1 - grayscale) + data[i + 1] * grayscale;  // Green
+                data[i + 2] = avg * (1 - grayscale) + data[i + 2] * grayscale;  // blue
+
+                // Set the new pixel values
+                data[i] = Math.min(255, Math.max(0, data[i]));
+                data[i + 1] = Math.min(255, Math.max(0, data[i + 1]));
+                data[i + 2] = Math.min(255, Math.max(0, data[i + 2]));
+            }
+
+            ctx.putImageData(imageData, 0, 0);
+        }
+
+
+
+        function flipHorizontal(horizontal) {
+
+            // Apply the flip transformation
+            ctx.scale(horizontal ? -1 : 1, horizontal ? 1 : -1);
+            ctx.drawImage(canvas, horizontal ? -canvas.width : 0, horizontal ? 0 : -canvas.height);
+
+            // Restore the canvas state
+            ctx.restore();
+        }
+
+        document.getElementById('flip-horizontal').addEventListener('click', function () {
+            flipImage(true);
+        });
+
+
+        function flipVertical() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+            // Apply vertical flip transformation
+            ctx.scale(1, -1); // Flip vertically
+            ctx.drawImage(canvas, 0, -canvas.height);
+
+            // Restore the canvas state
+            ctx.restore();
+        }
+
+        document.getElementById('flip-vertical').addEventListener('click', function () {
+            flipVertical();
+        });
+
+
+        function rotateLeft() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            img.src = canvas.toDataURL(); // Get the current image as a Data URL
+            img.onload = function () {
+                // Calculate new dimensions
+                const width = img.width;
+                const height = img.height;
+                const newWidth = height;
+                const newHeight = width;
+
+                // Set canvas size
+                canvas.width = newWidth;
+                canvas.height = newHeight;
+
+                // Clear canvas and center the image
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.save();
+                ctx.translate(canvas.width / 2, canvas.height / 2); // Move origin to center
+                ctx.rotate(-90 * Math.PI / 180); // Rotate left (counterclockwise) by 90 degrees
+                ctx.drawImage(img, -width / 2, -height / 2); // Draw image centered on canvas
+                ctx.restore();
+            }
+        }
+
+        document.getElementById('rotate-left').addEventListener('click', function () {
+            rotateLeft(true);
+        });
+
+
+        function rotateRight() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            img.src = canvas.toDataURL(); // Get the current image as a Data URL
+            img.onload = function () {
+                // Calculate new dimensions
+                const width = img.width;
+                const height = img.height;
+                const newWidth = height;
+                const newHeight = width;
+
+                // Set canvas size
+                canvas.width = newWidth;
+                canvas.height = newHeight;
+
+                // Clear canvas and center the image
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.save();
+                ctx.translate(canvas.width / 2, canvas.height / 2); // Move origin to center
+                ctx.rotate(90 * Math.PI / 180); // Rotate right (clockwise) by 90 degrees
+                ctx.drawImage(img, -width / 2, -height / 2); // Draw image centered on canvas
+                ctx.restore();
+            }
+        }
+
+        document.getElementById('rotate-right').addEventListener('click', function () {
+            rotateRight(true);
+        });
+
+
+
+        function resetFilterData() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            if (!originalImageData) {
+                alert('Refresh page or Upload new image');
+            }
+
+            // Restore the original image data
+            ctx.putImageData(originalImageData, 0, 0);
+        }
+
+
+        document.getElementById('resetData').addEventListener('click', function () {
+            resetFilter();
+        });
+
+        brightnessInput.addEventListener('input', applyFilters);
+        saturationInput.addEventListener('input', applyFilters);
+        grayscaleInput.addEventListener('input', applyFilters);
+        resetFilter.addEventListener('click', resetFilterData);
+
+
+        document.getElementById('save').addEventListener('click', function () {
+            const canvas = document.getElementById('canvas');
+            const link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = 'filtered-image.png';
+            link.click();
+        });
+
+
+        // *****************************************************************************************
+        // prac 16 : Local Storage CURD in new file
+
+
+
+    </script>
+
+
+    <!-- prac 12 : light box gallary -->
+    <script src="../Assignment/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>

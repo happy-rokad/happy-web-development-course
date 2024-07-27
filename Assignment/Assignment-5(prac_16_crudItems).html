@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .prac16 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .prac16 form input {
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid lightgray;
+            background-color: white;
+        }
+
+        .prac16 form input::placeholder {
+            font-size: 12px;
+            color: rgb(129, 129, 129);
+        }
+
+        .prac16 form button {
+            width: 100px;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            background-color: white;
+        }
+
+        .prac16 .editbtn,
+        .deletebtn {
+            width: 60px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            color: white;
+        }
+
+        .prac16 .editbtn {
+            background-color: rgb(52, 143, 0);
+        }
+
+        .prac16 .deletebtn {
+            background-color: rgb(211, 0, 0);
+        }
+
+        .prac16 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .prac16 li {
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1> CRUD with Localstorage </h1>
+
+    <div class="prac16">
+        <form id="itemForm">
+            <input type="text" id="itemInput" placeholder="Enter item" required>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <ul id="itemList"></ul>
+    </div>
+
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const itemForm = document.getElementById('itemForm');
+            const itemInput = document.getElementById('itemInput');
+            const itemList = document.getElementById('itemList');
+        });
+
+        loadItems();
+
+        // Add item on form submission
+        itemForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const itemText = itemInput.value.trim();
+            if (itemText) {
+                addItem(itemText);
+                itemInput.value = ''; // clear input
+            }
+        });
+
+        // Load items from localStorage
+        function loadItems() {
+            const items = JSON.parse(localStorage.getItem('items')) || [];
+            items.forEach(item => {
+                addListItem(item.text, item.id);
+            });
+        }
+
+        // Add a new item to localStorage and list
+        function addItem(text) {
+            const items = JSON.parse(localStorage.getItem('items')) || [];
+            const newItem = {
+                id: Date.now(),
+                text: text
+            };
+            items.push(newItem);
+            localStorage.setItem('items', JSON.stringify(items));
+            addListItem(newItem.text, newItem.id);
+        }
+
+        // Create and append list item to DOM
+        function addListItem(text, id) {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = ` ${text} <button onclick="editItem(${id})" class="editbtn">Edit</button>
+                                   <button onclick="deleteItem(${id})" class="deletebtn">Delete</button> `;
+            itemList.appendChild(listItem);
+        }
+
+        // Edit an item
+        window.editItem = function (id) {
+            const items = JSON.parse(localStorage.getItem('items')) || [];
+            const item = items.find(i => i.id === id);
+            if (item) {
+                const newText = prompt('Edit item:', item.text);
+                if (newText) {
+                    item.text = newText;
+                    localStorage.setItem('items', JSON.stringify(items));
+                    refreshItemList();
+                }
+            }
+        };
+
+        // Delete an item
+        window.deleteItem = function (id) {
+            let items = JSON.parse(localStorage.getItem('items')) || [];
+            items = items.filter(item => item.id !== id);
+            localStorage.setItem('items', JSON.stringify(items));
+            refreshItemList();
+        };
+
+        // Refresh the list to reflect changes
+        function refreshItemList() {
+            itemList.innerHTML = '';
+            loadItems();
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
