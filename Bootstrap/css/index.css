@@ -1,0 +1,441 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header .main-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+header .navbar{
+    position: absolute;
+}
+
+header nav .navbar-collapse .nav-item a{
+    color: #212832;
+}
+
+header nav .navbar-collapse .nav-item a, 
+header nav .navbar-collapse .nav-item .btn{
+    font-weight: bold;
+}
+
+header nav .navbar-collapse{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+/* section 1 : travel box */
+
+.travel_box {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+.travel_box .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel_box .box .content_box{
+    width: 40%;
+    letter-spacing: normal;
+}
+
+.travel_box .box h4{
+    color: #DF6951;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.travel_box .box h1{
+    color: #181E4B;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    line-height: 70px;
+}
+
+.travel_box .box p{
+    color: #5E6282;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.travel_box .box button{
+    font-weight: bold;
+    color: white;
+    background-color: #F1A501;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.travel_box .box .img_box{
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.travel_box .img_box img{
+    width: auto;
+    height: 550px;
+    object-fit: cover;
+}
+
+
+/* section 2 : best offer service */
+
+.best_offer{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.best_offer .offer p{
+    font-size: 20px;
+}
+
+.best_offer .offer h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.best_offer .offer .offer_cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.best_offer .offer .offer_cards .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: none;
+    margin-top: 50px;
+    height: 200px;
+    width: 300px;
+}
+
+.best_offer .offer .offer_cards .card .card_img{
+    width: 100%;
+    height: 100px;
+}
+
+.best_offer .offer .offer_cards .card .card-body{
+    width: 100%;
+    height: 200px;
+}
+
+.best_offer .offer .offer_cards .card .card_img img{
+    width: auto;
+    height: auto;
+}
+
+
+.best_offer .offer .offer_cards .card .card-body .card-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.best_offer .offer .offer_cards .card .card-body .card-text{
+    font-size: 18px;
+    color: #5E6282;
+} 
+
+
+/* section 3 : top destination */
+
+.top_destination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.top_destination .desti .desti_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.top_destination .desti p{
+    font-size: 20px;
+}
+
+.top_destination .desti h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.top_destination .desti .desti_cards .card{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    text-align: left;
+    border: none;
+    box-shadow: 0px 0px 20px 0px rgb(212, 212, 212);
+}
+
+.top_destination .desti .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.top_destination .desti .card .card_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_destination .desti .card .card_content p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5E6282;
+}
+
+.top_destination .desti .card .card_content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.top_destination .desti .card .card_content2 img{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.top_destination .desti .card .card_content2 p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* section 4 : testimonials */
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 100px;
+}
+
+.testimonials .people{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+}
+
+.testimonials .people .content p{
+    font-size: 20px;
+}
+
+.testimonials .people .content h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.testimonials .people .carousel{
+    width: 100%;
+}
+
+.testimonials .people .carousel .carousel-inner .carousel-item .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 20px 0px rgb(212, 212, 212);
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.testimonials .people .carousel .carousel-inner .carousel-item .card .btns{
+    background-color: white;
+    border: none;
+}
+
+.testimonials .people .carousel .carousel-inner .carousel-item .card img{
+    width: 80px;
+    height: 80px;
+}
+
+.testimonials .people .carousel .carousel-inner .carousel-item .card h5{
+    font-weight: bold;
+}
+
+.testimonials .people .carousel .carousel-indicators .indicator-btn{
+    background-color: black;
+    height: 5px;
+    width: 50px;
+}
+
+.testimonials .people .btns button, 
+.testimonials .people .btns button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: none;
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 30px;
+    font-size: 26px;
+    color: black;
+}
+
+
+/* section 5 : brand images */
+
+.brandImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.brandImg .brands{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.brandImg .brands img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* section 6 : subscribe */
+
+.subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.subscribe .get_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe .get_info img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: 400px;
+}
+
+.subscribe .get_info .subscribe_content{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+}
+
+.subscribe .get_info .subscribe_content p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #5E6282;
+}
+
+.subscribe .get_info .subscribe_content  form{
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.subscribe .get_info .subscribe_content  form input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(231, 231, 231, 0.548);
+}
+
+.subscribe .get_info .subscribe_content  form button{
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: #FF946D;
+    border: none;
+    font-weight: bold;
+}
+
+
+/*  footer  */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 100px;
+}
+
+footer .footer_content .footer_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .footer_content .footer_box .part1, .part2, .part3, .part4{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_content .footer_box .part1 .p-logo{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer .footer_content .footer_box .part1 p{
+    font-size: 18px;
+}
+
+footer .footer_content .footer_box h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .footer_content .footer_box a{
+    font-size: 16px;
+    margin-top: 20px;
+    color: #5E6282;
+    text-decoration: none;
+}
