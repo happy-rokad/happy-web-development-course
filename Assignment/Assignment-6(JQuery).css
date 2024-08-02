@@ -1,0 +1,151 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 500px;
+}
+
+h1{
+    font-size: 26px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+/* prac 1 : change background-color */
+
+.color_box{
+    width: auto;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgb(233, 233, 233);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 100px;
+}
+
+.color_box .strip{
+    width: 60px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.color_box .strip1{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+.color_box .strip2{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.color_box .strip3{
+    background-image: linear-gradient(to top, #84fab0 0%, #8fd3f4 100%);
+}
+.color_box .strip4{
+    background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
+}
+.color_box .strip5{
+    background-image: linear-gradient(to top, #43e97b 0%, #38f9d7 100%);
+}
+.color_box .strip6{
+    background-image: linear-gradient(to top, #fa709a 0%, #fee140 100%);
+}
+
+
+/* prac 2 : slide change */
+
+
+.slide_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.slide_box .slider{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.slide_box .slide_btns button{
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    gap: 50px;
+    cursor: pointer;
+}
+
+
+/* prac 3 : show hide password */
+
+.password_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password_box input{
+    height: 30px;
+    padding-left: 10px;
+}
+
+.password_box button{
+    background-color: rgb(238, 238, 238);
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 80px;
+    height: 36px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* prac 4 : Fadeout img */
+
+.fade_out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade_out img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.fade_out button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}

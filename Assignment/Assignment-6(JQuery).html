@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment-6(JQuery).css">
+
+</head>
+
+<body>
+
+
+    <!-- prac 1 : change background-color -->
+
+    <h1> Prac 1 : Change Background-Color </h1>
+    <div class="color_box">
+        <div class="strip strip1"></div>
+        <div class="strip strip2"></div>
+        <div class="strip strip3"></div>
+        <div class="strip strip4"></div>
+        <div class="strip strip5"></div>
+        <div class="strip strip6"></div>
+    </div>
+
+    <!-- prac 2 : slide change -->
+
+    <h1> Prac 2 : Slide Change to UP, DOWN & TOGGLE </h1>
+    <div class="slide_box">
+        <div class="slider">
+            <h2> SlideUp / SlideDown / SlideToggle </h2>
+        </div>
+        <div class="slide_btns">
+            <button class="slideup"> SlideUp </button>
+            <button class="slidedown"> SlideDown </button>
+            <button class="slidetoggle"> SlideToggle </button>
+        </div>
+    </div>
+
+
+    <!-- prac 3 : Show/Hide Password -->
+
+    <h1> Prac 3 : Show/Hide Password </h1>
+
+    <div class="password_box">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="hide"> Show </button>
+    </div>
+
+
+    <!-- prac 4 : fade out image -->
+
+    <h1> Prac 4 : Fade Out Image </h1>
+    <div class="fade_out">
+        <button id="fadetoggle"> FadeOut </button>
+        <img src="../Assignment/images/india-flag.png" id="fade_img" alt="fade-img">
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            // prac 1 : background color change
+
+            $('.strip').on('click', function () {
+                var color = $(this).css('background-image');
+                $('.color_box').css('background-image', color);
+            });
+
+
+            // prac 2 : slide change
+
+            // slide up
+            $('.slideup').click(function () {
+                $('.slider').slideDown();
+            });
+
+            // slide down
+            $('.slidedown').click(function () {
+                $('.slider').slideUp();
+            });
+
+            // slide toggle
+            $('.slidetoggle').click(function () {
+                $('.slider').slideToggle();
+            });
+
+
+            // Prac 3 : show / hide password
+
+            $('#hide').click(function () {
+
+                var pwd = $('#password');
+                var type = pwd.attr('type');
+
+                if (type === 'password') {
+                    pwd.attr('type', 'text');
+                    $(this).text('Hide');
+                } else {
+                    pwd.attr('type', 'password');
+                    $(this).text('Show');
+                }
+
+            });
+
+
+            // prac 4 : Fade out image
+
+            $('#fadetoggle').click(function () {
+                $('#fade_img').fadeToggle(1000);
+                $(this).text('Show');
+            });
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
