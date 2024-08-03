@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            height: 30px;
+            width: 250px;
+            border-radius: 3px;
+            border: 1px solid black;
+            margin: 20px 0px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="search" name="" id="search" placeholder="Enter name or marks" onkeyup="searchData(event)">
+
+    <table border="1" rules="all" id="table">
+        <tr>
+            <th> Name </th>
+            <th> Marks </th>
+        </tr>
+        <tr>
+            <td> Happy </td>
+            <td> 99 </td>
+        </tr>
+        <tr>
+            <td> Krisha </td>
+            <td> 90 </td>
+        </tr>
+        <tr>
+            <td> Rekha </td>
+            <td> 95 </td>
+        </tr>
+        <tr>
+            <td> Jayshree </td>
+            <td> 80 </td>
+        </tr>
+        <tr>
+            <td> Jay </td>
+            <td> 84 </td>
+        </tr>
+        <tr>
+            <td> Jayesh </td>
+            <td> 75 </td>
+        </tr>
+        <tr>
+            <td> Khushbu </td>
+            <td> 70 </td>
+        </tr>
+        <tr>
+            <td> Kishor </td>
+            <td> 78 </td>
+        </tr>
+        <tr>
+            <td> Usha </td>
+            <td> 65 </td>
+        </tr>
+        <tr>
+            <td> Dinesh </td>
+            <td> 62 </td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        function searchData(e) {
+            let search = e.target.value;
+            let table = document.getElementById('table');
+            let tr = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName('td')[0].innerHTML;
+                let td2 = tr[i].getElementsByTagName('td')[1].innerHTML;
+
+                if (td.toLowerCase().indexOf(search) > -1 || td2.includes(search)) {
+                    tr[i].style.display = ' ';
+                } else {
+                    tr[i].style.display = 'none';
+                }
+            }
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
