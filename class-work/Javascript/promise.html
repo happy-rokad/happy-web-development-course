@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // const sum = (a, b) => {
+        //     return new Promise((resolve, reject) => {
+        //         resolve(a + b);
+        //     })
+        // }
+        // const multi = (a, b) => {
+        //     return new Promise((resolve, reject) => {
+        //         resolve(a * b);
+        //     })
+        // }
+        // const div = (a, b) => {
+        //     return new Promise((resolve, reject) => {
+        //         resolve(a / b);
+        //     })
+        // }
+
+        // sum(2, 3).then((result) => {
+        //     return multi(result, 40);
+        // }).then((res) => {
+        //     return div(res, 100);
+        // }).then((r) => {
+        //     console.log(r);
+        // })
+
+
+
+        // ***** used async, await *****
+
+        const sum = (a, b) => {
+            return a + b;
+            // return Promise.resolve(a + b);
+        }
+        const multi = (a, b) => {
+            return a * b;
+            // return Promise.resolve(a * b);
+        }
+        const div = (a, b) => {
+            return a / b;
+            // return Promise.resolve(a / b);
+        }
+        const myfun = async (a, b) => {
+            let s = await sum(a, b);
+            let m = await multi(a, b);
+            let d = await div(a, b);
+            return d;
+        }
+
+        myfun(40, 20).then(result => {
+            console.log(result);
+
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
