@@ -1,0 +1,13 @@
+.circle{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: blueviolet;
+    pointer-events: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.circle:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}

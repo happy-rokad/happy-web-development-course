@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbox{
+    width: 300px;
+    height: auto;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.navbox .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(107, 162, 180);
+    color: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.navbox .nav button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(228, 237, 240);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbox .views{
+    padding: 30px 0px;
+    text-align: center;
+    color: white;
+    background-color: rgb(148, 195, 211);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.navbox .footer{
+    background-color: rgb(107, 162, 180);
+    color: white;
+    padding: 2px 2px;
+    border-radius: 5px;   
+    text-align: center;
+    margin-top: 10px;
+}
