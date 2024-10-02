@@ -1,0 +1,77 @@
+.foodlist{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.foodlist .content{
+    border: 2px solid black;
+    padding: 20px;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodlist .content .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.foodlist input{
+    height: 35px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.foodlist button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #4c7aaf;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.foodlist .itemadd{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.foodlist .content .itemwithbutton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.foodlist p{
+    margin: 5px;
+    font-size: 20px;
+    font-family: Arial;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: navy;
+    width: 150px;
+}
+
+.foodlist .delbtn{
+    background-color: rgb(173, 42, 42);
+}

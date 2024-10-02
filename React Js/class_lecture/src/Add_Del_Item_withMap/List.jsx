@@ -19,7 +19,7 @@ const List = ({fruitList, deleteAction, editAction}) => {
                 deleteAction(index)
               }}> <img src={deleteicon}  /> </div>
               <div className='del' onClick={() => {
-                editAction(index)
+                editAction(result,index)
               }}> <img src={editicon} className='editicon'  /> </div>
             </div>
           </>

@@ -5,10 +5,18 @@ import List from './List';
 const AddFruit = () => {
 
   const [fruit, setfruit] = useState([]);
+  const [checkId, setId] = useState(null);
 
   const addFruit = () => {
     let Data = document.getElementById('add_data').value;
-    setfruit([...fruit, Data]);
+    if (checkId == null) {
+      setfruit([...fruit, Data]);
+    } else {
+      let frt = [...fruit];
+      frt[checkId] = Data;
+      setfruit(frt);
+      setId(null);
+    }
     document.getElementById('add_data').value = ' ';
   }
 
@@ -19,11 +27,9 @@ const AddFruit = () => {
     setfruit(frt);
   }
 
-  const editData = (index) => {
-    let frt = [...fruit];
-    frt.slice(index, 1);
-    setfruit(document.getElementById('add_data').value = frt);
-    
+  const editData = (result,index) => {
+    document.getElementById('add_data').value = result;
+    setId(index);
   }
 
   return (
@@ -39,7 +45,7 @@ const AddFruit = () => {
           <input type="text" id='add_data'/>
           <button onClick={() => {
             addFruit()
-          } }> Add </button>
+          } }> {checkId == null ? 'Add' : 'Edit'} </button>
         </div>
       </div>
     
