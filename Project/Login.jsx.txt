@@ -14,7 +14,7 @@ const Login = () => {
   useEffect(() => {
     const user = localStorage.getItem('user');
     if (user) {
-      navigate('/products'); // Redirect to products page if user is logged in
+      navigate('/product'); // Redirect to products page if user is logged in
     }
   }, [navigate]);
 
@@ -28,7 +28,7 @@ const Login = () => {
         const userData = response.data[0];
         localStorage.setItem('user', JSON.stringify(userData)); // Save user to localStorage
         dispatch(login(userData)); // Update Redux state
-        navigate('/products'); // Redirect to products page
+        navigate('/product'); // Redirect to products page
       } else {
         alert('Invalid credentials');
       }

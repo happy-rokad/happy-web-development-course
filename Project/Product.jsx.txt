@@ -4,78 +4,46 @@ import { addToCart } from '../features/cartSlice';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const Product = () => {
+const Products = () => {
   const [products, setProducts] = useState([]);
-  const user = useSelector((state) => state.user);
+  const user = useSelector(state => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // Fetch products from JSON server
   useEffect(() => {
     if (!user.isLoggedIn) {
       navigate('/');
     } else {
-      axios.get('http://localhost:5000/products').then((response) => {
-        setProducts(response.data);
-      })
+      axios.get('http://localhost:5000/products').then(response => setProducts(response.data));
     }
   }, [user, navigate]);
-  
 
-  // Handle Add to Cart
   const handleAddToCart = (product) => {
-    if (user.isLoggedIn) {
-      dispatch(addToCart({ userId: user.userInfo.id, productId: product.id, quantity: 0}))
-    } else {
-      alert('Please log in to add items to your cart');
-    }
-
-    dispatch(
-      addToCart({
-        productId: product.id,
-        name: product.name,
-        price: product.price,
-        quantity: 1,
-      })
-    );
+    dispatch(addToCart({ ...product, quantity: 1 }));
   };
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Products</h1>
+      <h1>Products</h1>
       <div className="row">
-        {products.length === 0 ? (
-          <p className="text-center">Loading products...</p>
-        ) : (
-          products.map((product) => (
-            <div className="col-md-4 mb-4" key={product.id}>
-              <div className="card h-100">
-                <img
-                  src={product.image}
-                  className="card-img-top"
-                  alt={product.name}
-                  style={{ height: '200px', objectFit: 'cover' }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{product.name}</h5>
-                  <p className="card-text text-muted">{product.description}</p>
-                  <p className="card-text">
-                    <strong>Price:</strong> ${product.price}
-                  </p>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => handleAddToCart(product)}
-                  >
-                    Add to Cart
-                  </button>
-                </div>
+        {products.map(product => (
+          <div className="col-md-4" key={product.id}>
+            <div className="card">
+              <img src={product.image} alt={product.name} className="card-img-top" style={{ width: 'auto', height:'200px', objectFit:'cover'}}/>
+              <div className="card-body">
+                <h5>{product.name}</h5>
+                <p>{product.description}</p>
+                <p>Price: ${product.price}</p>
+                <button onClick={() => handleAddToCart(product)} className="btn btn-primary">
+                  Add to Cart
+                </button>
               </div>
             </div>
-          ))
-        )}
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default Product;
+export default Products;

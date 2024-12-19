@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../features/userSlice';
-import { resetCart } from '../features/cartSlice';
-import { updateCartFromStorage } from '../features/cartSlice';
+import { loadCartFromStorage } from '../features/cartSlice';
+
 
 const Header = () => {
   const cart = useSelector((state) => state.cart.items); // Access cart items
@@ -16,8 +16,7 @@ const Header = () => {
 
   // Handle Logout
   const handleLogout = () => {
-    dispatch(logout()); // Dispatch logout action to clear user state and reset cart
-    dispatch(resetCart()); // Reset cart in Redux state on logout
+    dispatch(logout()); // Reset cart in Redux state on logout
     navigate('/'); // Redirect to home page or login page after logout
   };
 
@@ -27,7 +26,7 @@ const Header = () => {
       const userEmail = user.userInfo?.email;
       const storedCart = JSON.parse(localStorage.getItem(`cart_${userEmail}`));
       if (storedCart) {
-        dispatch(updateCartFromStorage(storedCart)); // Update Redux cart state from localStorage
+        dispatch(loadCartFromStorage(storedCart)); // Update Redux cart state from localStorage
       }
     }
   }, [dispatch, user]);
