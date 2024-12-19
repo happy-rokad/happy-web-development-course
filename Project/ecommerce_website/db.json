@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "8658",
+      "email": "rokadhappy@gmail.com",
+      "password": "happy123"
+    },
+    {
+      "id": "45b6",
+      "email": "happy07@gmail.com",
+      "password": "happy12345"
+    },
+    {
+      "id": "64c0",
+      "email": "happyrokad@gmail.com",
+      "password": "happy1234"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 100,
+      "image": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "name": "Phone",
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "name": "Earpods",
+      "price": 300,
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "carts": []
+}

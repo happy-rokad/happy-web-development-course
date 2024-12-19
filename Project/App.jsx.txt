@@ -1,0 +1,36 @@
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import Header from './components/Header';
+import Login from './pages/Login';
+import Product from './pages/Products';
+import Cart from './pages/Cart';
+import Payment from './pages/Payment';
+import { loadUser } from './features/userSlice';
+import Register from './pages/Register';
+// import Cart1 from './pages/cart1';
+
+const App = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadUser());
+  }, [dispatch]);
+
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/products" element={<Product />} />
+        {/* <Route path="/cart" element={<Cart1/>} /> */}
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/payment" element={<Payment />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;

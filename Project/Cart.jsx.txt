@@ -1,0 +1,43 @@
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeFromCart } from '../features/cartSlice';
+
+const Cart = () => {
+  const cartItems = useSelector(state => state.cart.items);
+  const dispatch = useDispatch();
+
+  const handleRemove = (id) => {
+    dispatch(removeFromCart({ id }));
+  };
+
+  return (
+    <div className="container mt-5">
+      <h1>Cart</h1>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <ul className="list-group">
+          {cartItems.map(item => (
+            <li className="list-group-item d-flex justify-content-between align-items-center" key={item.id}>
+              <img 
+                  src={item.image} 
+                  alt={item.name} 
+                  style={{ width: '50px', height: '50px', marginRight: '10px', objectFit: 'cover' }} 
+                />
+              Product Name: {item.name} <br />
+              Product Price: ₹{item.price} <br />
+              Product Quantity : {item.quantity} <br />
+              <b> Total Price : {item.quantity * item.price} </b>
+
+              <button onClick={() => handleRemove(item.id)} className="btn btn-danger btn-sm">
+                Remove
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default Cart;

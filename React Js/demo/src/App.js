@@ -3,6 +3,7 @@ import headerLogo from './Logo.png';
 import './App.css';
 import { Slider } from './slider';
 import { Cards } from './Cards';
+import Changecolor from './Change_color/Changecolor';
 
 function App() {
   return (
@@ -23,8 +24,10 @@ function App() {
     //   </header>
     // </div>
     <>
-      <Slider />
-      <Cards />
+      {/* <Slider />
+      <Cards /> */}
+
+      <Changecolor />
     </>
   );
 
@@ -37,9 +40,9 @@ function Header() {
       <header>
         <nav>
           <div className='Image'>
-            <img src={ headerLogo} className="Header-logo" alt="header-logo" />
+            <img src={headerLogo} className="Header-logo" alt="header-logo" />
           </div>
-          <div className='Content-nav'>  
+          <div className='Content-nav'>
             <a> Destination </a>
             <a> Hotels </a>
             <a> Flights </a>
